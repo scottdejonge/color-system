@@ -12,9 +12,9 @@ export default {
 </script>
 
 <template>
-  <div>
-    <ul v-for="palette in $options.palettes" v-bind:key="palette">
+  <ul>
+    <li v-for="palette in $options.palettes" v-bind:key="palette">
       <Palette v-bind:palette="palette" />
-    </ul>
-  </div>
+    </li>
+  </ul>
 </template>

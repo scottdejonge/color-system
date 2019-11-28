@@ -9,6 +9,7 @@
     "dictionary": "style-dictionary build"
   },
   "dependencies": {
+    "color": "^3.1.2",
     "core-js": "^3.4.3",
     "vue": "^2.6.10"
   },

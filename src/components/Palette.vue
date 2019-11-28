@@ -18,10 +18,12 @@ export default {
 </script>
 
 <template>
-  <li>
+  <div>
     <h2>{{ palette }}</h2>
-    <ul v-for="color in $options.colors[palette]" v-bind:key="color.name">
-      <Swatch v-bind:color="color" />
+    <ul>
+      <li v-for="color in $options.colors[palette]" v-bind:key="color.name">
+        <Swatch v-bind:item="color" />
+      </li>
     </ul>
-  </li>
+  </div>
 </template>
