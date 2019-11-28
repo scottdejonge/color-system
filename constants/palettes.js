@@ -1,4 +1,8 @@
 export default [
+  'neutral',
   'blue',
-  'red'
+  'navy',
+  'green',
+  'red',
+  'yellow',
 ]
