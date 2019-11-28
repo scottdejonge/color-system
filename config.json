@@ -1,0 +1,57 @@
+{
+  "source": ["properties/*.json"],
+  "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "buildPath": "build/css/",
+      "files": [
+        {
+          "destination": "_variables.css",
+          "format": "css/variables"
+        }
+      ]
+    },
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "build/scss/",
+      "files": [
+        {
+          "destination": "_variables.scss",
+          "format": "scss/variables"
+        }
+      ]
+    },
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "build/js/",
+      "files": [
+        {
+          "destination": "variables.es6.js",
+          "format": "javascript/es6"
+        },
+        {
+          "destination": "variables.module.js",
+          "format": "javascript/module"
+        },
+        {
+          "destination": "variables.object.js",
+          "format": "javascript/object"
+        }
+      ]
+    },
+    "json": {
+      "transformGroup": "css",
+      "buildPath": "build/json/",
+      "files": [
+        {
+          "destination": "variables.nested.json",
+          "format": "json/nested"
+        },
+        {
+          "destination": "variables.flat.json",
+          "format": "json/flat"
+        }
+      ]
+    }
+  }
+}
