@@ -1,28 +1,20 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
-</template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import palettes from '../constants/palettes'
+import Palette from './components/Palette.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
+  palettes,
   components: {
-    HelloWorld
+    Palette
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<template>
+  <div>
+    <ul v-for="palette in $options.palettes" v-bind:key="palette">
+      <Palette v-bind:palette="palette" />
+    </ul>
+  </div>
+</template>

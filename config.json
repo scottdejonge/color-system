@@ -1,5 +1,5 @@
 {
-  "source": ["properties/*.json"],
+  "source": ["constants/*.json"],
   "platforms": {
     "css": {
       "transformGroup": "css",
