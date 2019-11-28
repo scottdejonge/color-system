@@ -3,13 +3,13 @@ export default {
   name: 'Swatch',
   props: {
     color: {
-      type: String,
+      type: Object,
       required: true,
     },
   },
   computed: {
     style: function () {
-      return `background-color:${this.color}`
+      return `background-color:${this.color.value}`
     }
   }
 }
@@ -17,7 +17,8 @@ export default {
 
 <template>
   <li class="swatch" v-bind:style="style">
-    {{ color }}
+    <span>{{ color.name }}</span><br>
+    <code>{{ color.value }}</code>
   </li>
 </template>
 

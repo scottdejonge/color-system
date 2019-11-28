@@ -20,8 +20,8 @@ export default {
 <template>
   <li>
     <h2>{{ palette }}</h2>
-    <ul v-for="color in $options.colors[palette]" v-bind:key="color">
-      <Swatch v-bind:color="color.value" />
+    <ul v-for="color in $options.colors[palette]" v-bind:key="color.name">
+      <Swatch v-bind:color="color" />
     </ul>
   </li>
 </template>
