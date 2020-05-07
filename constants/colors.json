@@ -39,10 +39,6 @@
     "90": {
       "name": "neutral-90",
       "value": "hsl(200, 15%, 15%)"
-    },
-    "default"  : {
-      "name": "neutral-default",
-      "value": "{neutral.50.value}"
     }
   },
   "blue": {
@@ -85,10 +81,6 @@
     "90": {
       "name": "blue-90",
       "value": "hsl(200, 100%, 15%)"
-    },
-    "default"  : {
-      "name": "blue-default",
-      "value": "{blue.50.value}"
     }
   },
   "navy": {
@@ -131,10 +123,6 @@
     "90": {
       "name": "navy-90",
       "value": "hsl(200, 100%, 5%)"
-    },
-    "default"  : {
-      "name": "navy-default",
-      "value": "{navy.50.value}"
     }
   },
   "green": {
@@ -177,10 +165,6 @@
     "90": {
       "name": "green-90",
       "value": "hsl(170, 70%, 15%)"
-    },
-    "default"  : {
-      "name": "green-default",
-      "value": "{green.50.value}"
     }
   },
   "red": {
@@ -223,10 +207,6 @@
     "90": {
       "name": "red-90",
       "value": "hsl(15, 100%, 15%)"
-    },
-    "default"  : {
-      "name": "red-default",
-      "value": "{red.50.value}"
     }
   },
   "yellow": {
@@ -269,10 +249,6 @@
     "90": {
       "name": "yellow-90",
       "value": "hsl(60, 100%, 15%)"
-    },
-    "default"  : {
-      "name": "yellow-default",
-      "value": "{yellow.50.value}"
     }
   }
 }
