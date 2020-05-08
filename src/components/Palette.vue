@@ -25,8 +25,8 @@ export default {
     <table>
       <thead>
         <tr>
-          <th>Swatch</th>
           <th>Name</th>
+          <th>Swatch</th>
           <th>Hex</th>
           <th>HSL</th>
           <th>RGB</th>
@@ -44,3 +44,16 @@ export default {
     </table>
   </div>
 </template>
+
+<style scoped>
+table {
+  border-color: transparent;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+</style>

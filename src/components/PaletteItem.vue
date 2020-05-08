@@ -34,13 +34,13 @@ export default {
 
 <template>
   <tr>
+    <th>
+      {{ name }}
+    </th>
     <td>
       <Swatch
         v-bind:color="value"
       />
-    </td>
-    <td>
-      {{ name }}
     </td>
     <td>
       {{ color.hex() }}
@@ -53,3 +53,12 @@ export default {
     </td>
   </tr>
 </template>
+
+
+<style scoped>
+td,
+th {
+  padding: 0.25em;
+  text-align: left;
+}
+</style>
