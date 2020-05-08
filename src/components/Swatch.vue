@@ -24,6 +24,6 @@ export default {
 
 <style scoped>
 .swatch {
-  padding: 1em;
+  padding: 1em 0.5em;
 }
 </style>
