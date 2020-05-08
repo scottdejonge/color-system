@@ -1,15 +1,15 @@
 import palettes from './palettes.json'
 
 export const BASE_COLORS = {
-  BLUE: palettes.blue['50'],
-  DARK: palettes.blue['80'],
-  GREEN: palettes.green['50'],
-  LIGHT: palettes.neutral['0'],
-  NEUTRAL: palettes.neutral['50'],
-  ORANGE: palettes.orange['50'],
-  RED: palettes.red['50'],
-  TURQUOISE: palettes.turquoise['50'],
-  YELLOW: palettes.yellow['50'],
+  BLUE: palettes.blue['50'].value,
+  DARK: palettes.blue['80'].value,
+  GREEN: palettes.green['50'].value,
+  LIGHT: palettes.neutral['0'].value,
+  NEUTRAL: palettes.neutral['50'].value,
+  ORANGE: palettes.orange['50'].value,
+  RED: palettes.red['50'].value,
+  TURQUOISE: palettes.turquoise['50'].value,
+  YELLOW: palettes.yellow['50'].value,
 };
 
 export const WCAG_CONTRAST_RATIO = {

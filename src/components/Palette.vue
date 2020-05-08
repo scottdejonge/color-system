@@ -36,11 +36,11 @@ export default {
       </thead>
       <tbody>
         <PaletteItem
-          v-for="(value, scale) in palette"
+          v-for="(item, scale) in palette"
           v-bind:key="scale"
           v-bind:scale="scale"
           v-bind:palette-name="name"
-          v-bind:value="value"
+          v-bind:value="item.value"
         />
       </tbody>
     </table>
