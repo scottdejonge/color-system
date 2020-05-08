@@ -22,10 +22,10 @@ export default {
     },
   },
   computed: {
-    color: function () {
+    color() {
       return Color(this.value);
     },
-    name: function () {
+    name() {
       return `${this.paletteName}-${this.scale}`;
     },
   },

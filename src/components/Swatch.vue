@@ -9,7 +9,7 @@ export default {
     },
   },
   computed: {
-    style: function () {
+    style() {
       return `background-color:${this.color}`
     },
   },
