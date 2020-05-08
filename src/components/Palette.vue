@@ -7,12 +7,12 @@ export default {
     PaletteItem,
   },
   props: {
-    colors: {
-      type: Object,
+    name: {
+      type: String,
       required: true,
     },
     palette: {
-      type: String,
+      type: Object,
       required: true,
     },
   },
@@ -21,7 +21,7 @@ export default {
 
 <template>
   <div>
-    <h2>{{ palette }}</h2>
+    <h2>{{ name }}</h2>
     <table>
       <thead>
         <tr>
@@ -34,9 +34,11 @@ export default {
       </thead>
       <tbody>
         <PaletteItem
-          v-for="item in colors[palette]"
-          v-bind:key="item.name"
-          v-bind:item="item"
+          v-for="(value, scale) in palette"
+          v-bind:key="scale"
+          v-bind:scale="scale"
+          v-bind:palette-name="name"
+          v-bind:value="value"
         />
       </tbody>
     </table>

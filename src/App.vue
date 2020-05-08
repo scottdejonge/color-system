@@ -1,12 +1,10 @@
 <script>
-import colors from '../constants/colors.json'
-import palettes from '../constants/palettes'
+import palettes from '../constants/palettes.json'
 import Palette from './components/Palette.vue'
 import Swatch from './components/Swatch.vue'
 
 export default {
   name: 'App',
-  colors,
   palettes,
   components: {
     Palette,
@@ -19,20 +17,20 @@ export default {
   <main>
     <ul>
       <li
-        v-for="palette in $options.palettes" 
-        v-bind:key="$options.colors[palette][50].name"
+        v-for="(palette, name) in $options.palettes" 
+        v-bind:key="name"
       >
         <Swatch
-          v-bind:color="$options.colors[palette][50].value"
+          v-bind:color="palette[50]"
         >
-          {{ palette }}
+          {{ name }}
         </Swatch>
       </li>
     </ul>
     <Palette
-      v-for="palette in $options.palettes" 
-      v-bind:key="palette"
-      v-bind:colors="$options.colors"
+      v-for="(palette, name) in $options.palettes" 
+      v-bind:key="name"
+      v-bind:name="name"
       v-bind:palette="palette"
     />
   </main>

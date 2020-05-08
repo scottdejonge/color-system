@@ -8,14 +8,25 @@ export default {
     Swatch
   },
   props: {
-    item: {
-      type: Object,
+    scale: {
+      type: String,
+      required: true,
+    },
+    paletteName: {
+      type: String,
+      required: true,
+    },
+    value: {
+      type: String,
       required: true,
     },
   },
   computed: {
     color: function () {
-      return Color(this.item.value);
+      return Color(this.value);
+    },
+    name: function () {
+      return `${this.paletteName}-${this.scale}`;
     },
   }
 }
@@ -25,11 +36,11 @@ export default {
   <tr>
     <td>
       <Swatch
-        v-bind:color="item.value"
+        v-bind:color="value"
       />
     </td>
     <td>
-      {{ item.name }}
+      {{ name }}
     </td>
     <td>
       {{ color.hex() }}
