@@ -30,6 +30,8 @@ export default {
           <th>Hex</th>
           <th>HSL</th>
           <th>RGB</th>
+          <th>Contrast Dark</th>
+          <th>Contrast Light</th>
         </tr>
       </thead>
       <tbody>

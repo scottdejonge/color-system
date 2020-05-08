@@ -1,11 +1,15 @@
 <script>
 import Color from 'color'
+import Contrast from './Contrast.vue'
 import Swatch from './Swatch.vue'
+import { BASE_COLORS } from '../../constants/constants'
 
 export default {
   name: 'PaletteItem',
+  BASE_COLORS,
   components: {
-    Swatch
+    Contrast,
+    Swatch,
   },
   props: {
     scale: {
@@ -50,6 +54,18 @@ export default {
     </td>
     <td>
       {{ color.rgb() }}
+    </td>
+    <td>
+      <Contrast
+        v-bind:value="value"
+        v-bind:versus="$options.BASE_COLORS.DARK"
+      />
+    </td>
+    <td>
+      <Contrast
+        v-bind:value="value"
+        v-bind:versus="$options.BASE_COLORS.LIGHT"
+      />
     </td>
   </tr>
 </template>
