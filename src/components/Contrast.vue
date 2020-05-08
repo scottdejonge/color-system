@@ -19,39 +19,41 @@ export default {
   },
   computed: {
     background() {
-      if (this.contrast >= WCAG_CONTRAST_RATIO.AA) {
-        return BASE_COLORS.GREEN;
-      } else {
-        return BASE_COLORS.RED;
-      }
+      return this.contrast >= WCAG_CONTRAST_RATIO.AA
+      ? BASE_COLORS.GREEN.LIGHT
+      : BASE_COLORS.RED.LIGHT;
     },
     color() {
-      return Color(this.value);
+      return this.contrast >= WCAG_CONTRAST_RATIO.AA
+      ? BASE_COLORS.GREEN.DARK
+      : BASE_COLORS.RED.DARK;
     },
     contrast() {
-      const ratio = this.color.contrast(Color(this.versus));
+      const ratio = Color(this.value).contrast(Color(this.versus));
       return ratio.toFixed(2);
     },
     style() {
-      return `background: ${this.background}; color: ${this.versus}`;
+      return `background: ${this.background}; color: ${this.color}`;
     },
   },
 }
 </script>
 
 <template>
-  <mark
+  <span
     v-bind:style="style"
   >
     {{ contrast }}
-  </mark>
+  </span>
 </template>
 
 
 <style scoped>
-mark {
+span {
+  border-radius: 0.25em;
   display: inline-block;
-  padding: 0.25em;
-  border-radius: 0.125em;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
 }
 </style>
