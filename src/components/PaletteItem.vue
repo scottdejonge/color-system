@@ -28,7 +28,7 @@ export default {
     name: function () {
       return `${this.paletteName}-${this.scale}`;
     },
-  }
+  },
 }
 </script>
 

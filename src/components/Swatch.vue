@@ -11,8 +11,8 @@ export default {
   computed: {
     style: function () {
       return `background-color:${this.color}`
-    }
-  }
+    },
+  },
 }
 </script>
 

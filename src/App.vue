@@ -1,32 +1,23 @@
 <script>
 import palettes from '../constants/palettes.json'
 import Palette from './components/Palette.vue'
-import Swatch from './components/Swatch.vue'
+import Swatches from './components/Swatches.vue'
 
 export default {
   name: 'App',
   palettes,
   components: {
     Palette,
-    Swatch,
-  }
+    Swatches,
+  },
 }
 </script>
 
 <template>
   <main>
-    <ul>
-      <li
-        v-for="(palette, name) in $options.palettes" 
-        v-bind:key="name"
-      >
-        <Swatch
-          v-bind:color="palette[50]"
-        >
-          {{ name }}
-        </Swatch>
-      </li>
-    </ul>
+    <Swatches
+      v-bind:palettes="$options.palettes"
+    />
     <Palette
       v-for="(palette, name) in $options.palettes" 
       v-bind:key="name"
