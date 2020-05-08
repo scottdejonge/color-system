@@ -21,6 +21,7 @@ export default {
       v-for="(palette, name) in palettes" 
       v-bind:key="name"
     >
+      <h2>{{ name }}</h2>
       <ul>
         <li
           v-for="(color, name) in palette" 
@@ -38,12 +39,16 @@ export default {
 </template>
 
 <style scoped>
+h2 {
+  font-size: 1rem;
+}
+
 .swatches {
   display: flex;
 }
 
-.swatches li {
-  flex-basis: 1;
+.swatches > li {
+  flex-basis: 1px;
   flex-grow: 1;
   flex-shrink: 1;
 }
