@@ -5,7 +5,6 @@ export const BASE_COLORS = {
   DARK: palettes.blue['80'],
   GREEN: palettes.green['50'],
   LIGHT: palettes.neutral['0'],
-  NAVY: palettes.navy['50'],
   NEUTRAL: palettes.neutral['50'],
   ORANGE: palettes.orange['50'],
   RED: palettes.red['50'],
