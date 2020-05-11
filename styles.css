@@ -1,0 +1,103 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 1rem;
+  max-width: 82rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 1em;
+  margin-top: 1.5em;
+  font-size: 1.25rem;
+}
+
+h3 {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  font-size: 1rem;
+}
+
+table {
+  border-color: transparent;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 0.25em;
+  text-align: left;
+  font-variant: tabular-nums;
+}
+
+section {
+  border-bottom-color: hsl(210, 15%, 80%);
+  border-bottom-style: solid;
+  border-bottom-width: 0.125rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.combinations {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+.combinations > li {
+  flex-basis: 1px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.5rem;
+}
+
+.swatches {
+  display: flex;
+}
+
+.swatches > li {
+  flex-basis: 1px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.swatch {
+  padding: 1em 0.5em;
+}
+
+.contrast,
+.sample {
+  border-radius: 0.25em;
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+}
+
+.sample {
+  margin-right: 0.5em;
+}
