@@ -1,7 +1,7 @@
 import palettes from './palettes.json'
 
 export const BASE_COLORS = {
-  LIGHT: palettes.neutral['0'].value,
+  LIGHT: palettes.neutral['10'].value,
   DEFAULT: palettes.neutral['50'].value,
   DARK: palettes.blue['80'].value,
   BLUE: {
