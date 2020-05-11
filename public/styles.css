@@ -62,6 +62,19 @@ hr {
   margin-top: 3rem;
 }
 
+.combinations {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+}
+
+.combinations > li {
+  flex-basis: 1px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.5rem;
+}
+
 .swatches {
   display: flex;
 }

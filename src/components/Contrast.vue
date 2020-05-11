@@ -1,7 +1,7 @@
 <script>
 import Color from 'color'
 import {
-  BASE_COLORS,
+  SHADES,
   WCAG_CONTRAST_RATIO,
 } from '../../constants/constants'
 
@@ -20,13 +20,13 @@ export default {
   computed: {
     background() {
       return this.contrast >= WCAG_CONTRAST_RATIO.AA
-      ? BASE_COLORS.GREEN.LIGHT
-      : BASE_COLORS.RED.LIGHT;
+      ? SHADES.GREEN.LIGHT
+      : SHADES.RED.LIGHT;
     },
     color() {
       return this.contrast >= WCAG_CONTRAST_RATIO.AA
-      ? BASE_COLORS.GREEN.DARK
-      : BASE_COLORS.RED.DARK;
+      ? SHADES.GREEN.DARK
+      : SHADES.RED.DARK;
     },
     contrast() {
       const ratio = Color(this.value).contrast(Color(this.versus));
