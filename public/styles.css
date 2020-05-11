@@ -53,13 +53,13 @@ th {
   font-variant: tabular-nums;
 }
 
-hr {
-  background: hsl(210, 15%, 80%);
-  border: none;
-  display: block;
-  height: 0.125rem;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+section {
+  border-bottom-color: hsl(210, 15%, 80%);
+  border-bottom-style: solid;
+  border-bottom-width: 0.125rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .combinations {

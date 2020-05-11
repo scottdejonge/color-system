@@ -16,12 +16,23 @@ export default {
       required: true,
     },
   },
+  computed: {
+    headingId() {
+      return `section-${this.name.toLowerCase()}`;
+    },
+  },
 }
 </script>
 
 <template>
-  <div>
-    <h3>{{ name }}</h3>
+  <section
+    v-bind:aria-labelledby="headingId"
+  >
+    <h3
+      v-bind:id="headingId"
+    >
+      {{ name }}
+    </h3>
     <table>
       <thead>
         <tr>
@@ -44,6 +55,5 @@ export default {
         />
       </tbody>
     </table>
-    <hr>
-  </div>
+  </section>
 </template>
