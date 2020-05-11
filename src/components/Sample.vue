@@ -22,6 +22,7 @@ export default {
 <template>
   <span
     class="sample"
+    v-bind:style="style"
   >
     Abc
   </span>

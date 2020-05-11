@@ -17,7 +17,10 @@ export default {
 </script>
 
 <template>
-  <div class="swatch" v-bind:style="style">
+  <div
+    class="swatch"
+    v-bind:style="style"
+  >
     <slot></slot>
   </div>
 </template>

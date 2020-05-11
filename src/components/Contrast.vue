@@ -42,6 +42,7 @@ export default {
 <template>
   <span
     class="contrast"
+    v-bind:style="style"
   >
     {{ contrast }}
   </span>
