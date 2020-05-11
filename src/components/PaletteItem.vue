@@ -41,7 +41,9 @@ export default {
 <template>
   <tr>
     <th>
-      {{ name }}
+      <code>
+        {{ name }}
+      </code>
     </th>
     <td>
       <Swatch
@@ -49,13 +51,19 @@ export default {
       />
     </td>
     <td>
-      {{ color.hex() }}
+      <code>
+        {{ color.hex() }}
+      </code>
     </td>
     <td>
-      {{ color.hsl() }}
+      <code>
+        {{ color.hsl() }}
+      </code>
     </td>
     <td>
-      {{ color.rgb() }}
+      <code>
+        {{ color.rgb() }}
+      </code>
     </td>
     <td>
       <Sample

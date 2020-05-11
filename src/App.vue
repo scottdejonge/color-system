@@ -15,9 +15,12 @@ export default {
 
 <template>
   <main>
+    <h1>Color System</h1>
+    <h2>Swatches</h2>
     <Swatches
       v-bind:palettes="$options.palettes"
     />
+    <h2>Palettes</h2>
     <Palette
       v-for="(palette, name) in $options.palettes" 
       v-bind:key="name"

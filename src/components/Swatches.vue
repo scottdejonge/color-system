@@ -21,7 +21,7 @@ export default {
       v-for="(palette, name) in palettes" 
       v-bind:key="name"
     >
-      <h2>{{ name }}</h2>
+      <h3>{{ name }}</h3>
       <ul>
         <li
           v-for="(item, name) in palette" 

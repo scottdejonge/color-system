@@ -21,7 +21,7 @@ export default {
 
 <template>
   <div>
-    <h2>{{ name }}</h2>
+    <h3>{{ name }}</h3>
     <table>
       <thead>
         <tr>
@@ -44,5 +44,6 @@ export default {
         />
       </tbody>
     </table>
+    <hr>
   </div>
 </template>
