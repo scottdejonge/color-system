@@ -1,30 +1,30 @@
 /**
  * Do not edit directly
- * Generated on Mon, 11 May 2020 06:40:44 GMT
+ * Generated on Mon, 11 May 2020 07:09:27 GMT
  */
 
-export const Neutral0 = "hsl(210, 20%, 98%)";
-export const Neutral10 = "hsl(210, 40%, 95%)";
-export const Neutral20 = "hsl(210, 35%, 90%)";
-export const Neutral30 = "hsl(210, 30%, 80%)";
-export const Neutral40 = "hsl(210, 25%, 70%)";
-export const Neutral50 = "hsl(210, 20%, 60%)";
-export const Neutral60 = "hsl(210, 20%, 50%)";
-export const Neutral70 = "hsl(210, 25%, 40%)";
-export const Neutral80 = "hsl(210, 30%, 30%)";
-export const Neutral90 = "hsl(210, 35%, 20%)";
-export const Neutral100 = "hsl(210, 40%, 15%)";
-export const Cyan0 = "hsl(187, 100%, 98%)";
-export const Cyan10 = "hsl(187, 100%, 95%)";
-export const Cyan20 = "hsl(187, 100%, 90%)";
-export const Cyan30 = "hsl(187, 100%, 80%)";
-export const Cyan40 = "hsl(187, 100%, 70%)";
-export const Cyan50 = "hsl(187, 100%, 43%)";
-export const Cyan60 = "hsl(187, 100%, 43%)";
-export const Cyan70 = "hsl(187, 100%, 40%)";
-export const Cyan80 = "hsl(187, 100%, 30%)";
-export const Cyan90 = "hsl(187, 100%, 20%)";
-export const Cyan100 = "hsl(187, 100%, 15%)";
+export const Neutral0 = "hsl(200, 40%, 98%)";
+export const Neutral10 = "hsl(200, 35%, 95%)";
+export const Neutral20 = "hsl(200, 32.5%, 85%)";
+export const Neutral30 = "hsl(200, 30%, 80%)";
+export const Neutral40 = "hsl(200, 25%, 65%)";
+export const Neutral50 = "hsl(200, 25%, 40%)";
+export const Neutral60 = "hsl(200, 25%, 30%)";
+export const Neutral70 = "hsl(200, 30%, 25%)";
+export const Neutral80 = "hsl(200, 32.5%, 20%)";
+export const Neutral90 = "hsl(200, 35%, 15%)";
+export const Neutral100 = "hsl(200, 40%, 10%)";
+export const Cyan0 = "hsl(187, 95%, 98%)";
+export const Cyan10 = "hsl(187, 95%, 95%)";
+export const Cyan20 = "hsl(187, 90%, 85%)";
+export const Cyan30 = "hsl(192, 85%, 80%)";
+export const Cyan40 = "hsl(192, 70%, 70%)";
+export const Cyan50 = "hsl(192, 75%, 55%)";
+export const Cyan60 = "hsl(198, 72%, 42%)";
+export const Cyan70 = "hsl(200, 78%, 32%)";
+export const Cyan80 = "hsl(203, 80%, 26%)";
+export const Cyan90 = "hsl(204, 81%, 22%)";
+export const Cyan100 = "hsl(206, 86%, 19%)";
 export const Blue0 = "hsl(210, 85%, 98%)";
 export const Blue10 = "hsl(210, 85%, 95%)";
 export const Blue20 = "hsl(210, 80%, 85%)";

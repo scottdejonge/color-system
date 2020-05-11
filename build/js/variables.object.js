@@ -1,14 +1,14 @@
 /**
  * Do not edit directly
- * Generated on Mon, 11 May 2020 06:40:44 GMT
+ * Generated on Mon, 11 May 2020 07:09:27 GMT
  */
 
 var _styleDictionary = {
   "neutral": {
     "0": {
-      "value": "hsl(210, 20%, 98%)",
+      "value": "hsl(200, 40%, 98%)",
       "original": {
-        "value": "hsl(210, 20%, 98%)"
+        "value": "hsl(200, 40%, 98%)"
       },
       "name": "Neutral0",
       "attributes": {
@@ -21,9 +21,9 @@ var _styleDictionary = {
       ]
     },
     "10": {
-      "value": "hsl(210, 40%, 95%)",
+      "value": "hsl(200, 35%, 95%)",
       "original": {
-        "value": "hsl(210, 40%, 95%)"
+        "value": "hsl(200, 35%, 95%)"
       },
       "name": "Neutral10",
       "attributes": {
@@ -36,9 +36,9 @@ var _styleDictionary = {
       ]
     },
     "20": {
-      "value": "hsl(210, 35%, 90%)",
+      "value": "hsl(200, 32.5%, 85%)",
       "original": {
-        "value": "hsl(210, 35%, 90%)"
+        "value": "hsl(200, 32.5%, 85%)"
       },
       "name": "Neutral20",
       "attributes": {
@@ -51,9 +51,9 @@ var _styleDictionary = {
       ]
     },
     "30": {
-      "value": "hsl(210, 30%, 80%)",
+      "value": "hsl(200, 30%, 80%)",
       "original": {
-        "value": "hsl(210, 30%, 80%)"
+        "value": "hsl(200, 30%, 80%)"
       },
       "name": "Neutral30",
       "attributes": {
@@ -66,9 +66,9 @@ var _styleDictionary = {
       ]
     },
     "40": {
-      "value": "hsl(210, 25%, 70%)",
+      "value": "hsl(200, 25%, 65%)",
       "original": {
-        "value": "hsl(210, 25%, 70%)"
+        "value": "hsl(200, 25%, 65%)"
       },
       "name": "Neutral40",
       "attributes": {
@@ -81,9 +81,9 @@ var _styleDictionary = {
       ]
     },
     "50": {
-      "value": "hsl(210, 20%, 60%)",
+      "value": "hsl(200, 25%, 40%)",
       "original": {
-        "value": "hsl(210, 20%, 60%)"
+        "value": "hsl(200, 25%, 40%)"
       },
       "name": "Neutral50",
       "attributes": {
@@ -96,9 +96,9 @@ var _styleDictionary = {
       ]
     },
     "60": {
-      "value": "hsl(210, 20%, 50%)",
+      "value": "hsl(200, 25%, 30%)",
       "original": {
-        "value": "hsl(210, 20%, 50%)"
+        "value": "hsl(200, 25%, 30%)"
       },
       "name": "Neutral60",
       "attributes": {
@@ -111,9 +111,9 @@ var _styleDictionary = {
       ]
     },
     "70": {
-      "value": "hsl(210, 25%, 40%)",
+      "value": "hsl(200, 30%, 25%)",
       "original": {
-        "value": "hsl(210, 25%, 40%)"
+        "value": "hsl(200, 30%, 25%)"
       },
       "name": "Neutral70",
       "attributes": {
@@ -126,9 +126,9 @@ var _styleDictionary = {
       ]
     },
     "80": {
-      "value": "hsl(210, 30%, 30%)",
+      "value": "hsl(200, 32.5%, 20%)",
       "original": {
-        "value": "hsl(210, 30%, 30%)"
+        "value": "hsl(200, 32.5%, 20%)"
       },
       "name": "Neutral80",
       "attributes": {
@@ -141,9 +141,9 @@ var _styleDictionary = {
       ]
     },
     "90": {
-      "value": "hsl(210, 35%, 20%)",
+      "value": "hsl(200, 35%, 15%)",
       "original": {
-        "value": "hsl(210, 35%, 20%)"
+        "value": "hsl(200, 35%, 15%)"
       },
       "name": "Neutral90",
       "attributes": {
@@ -156,9 +156,9 @@ var _styleDictionary = {
       ]
     },
     "100": {
-      "value": "hsl(210, 40%, 15%)",
+      "value": "hsl(200, 40%, 10%)",
       "original": {
-        "value": "hsl(210, 40%, 15%)"
+        "value": "hsl(200, 40%, 10%)"
       },
       "name": "Neutral100",
       "attributes": {
@@ -173,9 +173,9 @@ var _styleDictionary = {
   },
   "cyan": {
     "0": {
-      "value": "hsl(187, 100%, 98%)",
+      "value": "hsl(187, 95%, 98%)",
       "original": {
-        "value": "hsl(187, 100%, 98%)"
+        "value": "hsl(187, 95%, 98%)"
       },
       "name": "Cyan0",
       "attributes": {
@@ -188,9 +188,9 @@ var _styleDictionary = {
       ]
     },
     "10": {
-      "value": "hsl(187, 100%, 95%)",
+      "value": "hsl(187, 95%, 95%)",
       "original": {
-        "value": "hsl(187, 100%, 95%)"
+        "value": "hsl(187, 95%, 95%)"
       },
       "name": "Cyan10",
       "attributes": {
@@ -203,9 +203,9 @@ var _styleDictionary = {
       ]
     },
     "20": {
-      "value": "hsl(187, 100%, 90%)",
+      "value": "hsl(187, 90%, 85%)",
       "original": {
-        "value": "hsl(187, 100%, 90%)"
+        "value": "hsl(187, 90%, 85%)"
       },
       "name": "Cyan20",
       "attributes": {
@@ -218,9 +218,9 @@ var _styleDictionary = {
       ]
     },
     "30": {
-      "value": "hsl(187, 100%, 80%)",
+      "value": "hsl(192, 85%, 80%)",
       "original": {
-        "value": "hsl(187, 100%, 80%)"
+        "value": "hsl(192, 85%, 80%)"
       },
       "name": "Cyan30",
       "attributes": {
@@ -233,9 +233,9 @@ var _styleDictionary = {
       ]
     },
     "40": {
-      "value": "hsl(187, 100%, 70%)",
+      "value": "hsl(192, 70%, 70%)",
       "original": {
-        "value": "hsl(187, 100%, 70%)"
+        "value": "hsl(192, 70%, 70%)"
       },
       "name": "Cyan40",
       "attributes": {
@@ -248,9 +248,9 @@ var _styleDictionary = {
       ]
     },
     "50": {
-      "value": "hsl(187, 100%, 43%)",
+      "value": "hsl(192, 75%, 55%)",
       "original": {
-        "value": "hsl(187, 100%, 43%)"
+        "value": "hsl(192, 75%, 55%)"
       },
       "name": "Cyan50",
       "attributes": {
@@ -263,9 +263,9 @@ var _styleDictionary = {
       ]
     },
     "60": {
-      "value": "hsl(187, 100%, 43%)",
+      "value": "hsl(198, 72%, 42%)",
       "original": {
-        "value": "hsl(187, 100%, 43%)"
+        "value": "hsl(198, 72%, 42%)"
       },
       "name": "Cyan60",
       "attributes": {
@@ -278,9 +278,9 @@ var _styleDictionary = {
       ]
     },
     "70": {
-      "value": "hsl(187, 100%, 40%)",
+      "value": "hsl(200, 78%, 32%)",
       "original": {
-        "value": "hsl(187, 100%, 40%)"
+        "value": "hsl(200, 78%, 32%)"
       },
       "name": "Cyan70",
       "attributes": {
@@ -293,9 +293,9 @@ var _styleDictionary = {
       ]
     },
     "80": {
-      "value": "hsl(187, 100%, 30%)",
+      "value": "hsl(203, 80%, 26%)",
       "original": {
-        "value": "hsl(187, 100%, 30%)"
+        "value": "hsl(203, 80%, 26%)"
       },
       "name": "Cyan80",
       "attributes": {
@@ -308,9 +308,9 @@ var _styleDictionary = {
       ]
     },
     "90": {
-      "value": "hsl(187, 100%, 20%)",
+      "value": "hsl(204, 81%, 22%)",
       "original": {
-        "value": "hsl(187, 100%, 20%)"
+        "value": "hsl(204, 81%, 22%)"
       },
       "name": "Cyan90",
       "attributes": {
@@ -323,9 +323,9 @@ var _styleDictionary = {
       ]
     },
     "100": {
-      "value": "hsl(187, 100%, 15%)",
+      "value": "hsl(206, 86%, 19%)",
       "original": {
-        "value": "hsl(187, 100%, 15%)"
+        "value": "hsl(206, 86%, 19%)"
       },
       "name": "Cyan100",
       "attributes": {
