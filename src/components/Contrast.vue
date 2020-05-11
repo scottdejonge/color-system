@@ -41,19 +41,8 @@ export default {
 
 <template>
   <span
-    v-bind:style="style"
+    class="contrast"
   >
     {{ contrast }}
   </span>
 </template>
-
-
-<style scoped>
-span {
-  border-radius: 0.25em;
-  display: inline-block;
-  font-size: 0.875rem;
-  font-weight: bold;
-  padding: 0.25em 0.5em;
-}
-</style>

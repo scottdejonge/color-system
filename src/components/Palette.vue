@@ -46,16 +46,3 @@ export default {
     </table>
   </div>
 </template>
-
-<style scoped>
-table {
-  border-color: transparent;
-  border-spacing: 0;
-  table-layout: fixed;
-  width: 100%;
-}
-
-th {
-  text-align: left;
-}
-</style>

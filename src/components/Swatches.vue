@@ -37,19 +37,3 @@ export default {
     </li>
   </ul>
 </template>
-
-<style scoped>
-h2 {
-  font-size: 1rem;
-}
-
-.swatches {
-  display: flex;
-}
-
-.swatches > li {
-  flex-basis: 1px;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-</style>

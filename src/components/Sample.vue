@@ -21,20 +21,8 @@ export default {
 
 <template>
   <span
-    v-bind:style="style"
+    class="sample"
   >
     Abc
   </span>
 </template>
-
-
-<style scoped>
-span {
-  border-radius: 0.25em;
-  display: inline-block;
-  font-size: 0.875rem;
-  font-weight: bold;
-  margin-right: 0.5em;
-  padding: 0.25em 0.5em;
-}
-</style>

@@ -21,9 +21,3 @@ export default {
     <slot></slot>
   </div>
 </template>
-
-<style scoped>
-.swatch {
-  padding: 1em 0.5em;
-}
-</style>

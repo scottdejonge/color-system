@@ -79,12 +79,3 @@ export default {
     </td>
   </tr>
 </template>
-
-
-<style scoped>
-td,
-th {
-  padding: 0.25em;
-  text-align: left;
-}
-</style>
