@@ -86,7 +86,12 @@ section {
 }
 
 .swatch {
+  font-weight: 500;
   padding: 1em 0.5em;
+}
+
+.swatch code {
+  font-weight: 500;
 }
 
 .contrast,
