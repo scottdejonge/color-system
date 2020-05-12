@@ -36,8 +36,7 @@ export default {
     <table>
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Swatch</th>
+          <th>Color</th>
           <th>Hex</th>
           <th>HSL</th>
           <th>RGB</th>

@@ -24,14 +24,14 @@ export default {
       <h3>{{ name }}</h3>
       <ul>
         <li
-          v-for="(item, name) in palette" 
-          v-bind:key="name"
+          v-for="(item, scale) in palette" 
+          v-bind:key="scale"
         >
           <Swatch
             v-bind:color="item.value"
-          >
-            {{ name }}
-          </Swatch>
+            v-bind:palette-name="name"
+            v-bind:scale="scale"
+          />
         </li>
       </ul>
     </li>

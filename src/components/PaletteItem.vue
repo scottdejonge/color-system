@@ -41,15 +41,12 @@ export default {
 <template>
   <tr>
     <th>
-      <code>
-        {{ name }}
-      </code>
-    </th>
-    <td>
       <Swatch
         v-bind:color="value"
+        v-bind:palette-name="paletteName"
+        v-bind:scale="scale"
       />
-    </td>
+    </th>
     <td>
       <code>
         {{ color.hex() }}
