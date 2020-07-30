@@ -1,3 +1,9 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,6 +45,12 @@ h3 {
   font-size: 1rem;
 }
 
+h4 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-size: 0.875rem;
+}
+
 table {
   border-color: transparent;
   border-spacing: 0;
@@ -54,12 +66,15 @@ th {
 }
 
 section {
-  border-bottom-color: hsl(210, 15%, 80%);
-  border-bottom-style: solid;
-  border-bottom-width: 0.125rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.box {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 .combinations {
@@ -73,6 +88,11 @@ section {
   flex-grow: 1;
   flex-shrink: 1;
   padding: 0.5rem;
+}
+
+.combination {
+  display: block;
+  margin: auto;
 }
 
 .swatches {
