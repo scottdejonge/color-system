@@ -33,9 +33,9 @@ export default {
       <ul class="combinations">
         <li>
           <Combination
-            v-bind:primary="$options.SHADES.CYAN.DEFAULT"
-            v-bind:secondary="$options.SHADES.BLUE.DARK"
-            v-bind:tertiary="$options.SHADES.YELLOW.DEFAULT"
+            v-bind:first="$options.SHADES.CYAN.DEFAULT"
+            v-bind:second="$options.SHADES.BLUE.DARK"
+            v-bind:third="$options.SHADES.YELLOW.DEFAULT"
           />
         </li>
       </ul>

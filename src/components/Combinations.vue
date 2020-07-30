@@ -23,9 +23,9 @@ export default {
     >
       <h3>{{ name.toLowerCase() }}</h3>
       <Combination
-        v-bind:primary="palette.LIGHT"
-        v-bind:secondary="palette.DEFAULT"
-        v-bind:tertiary="palette.DARK"
+        v-bind:first="palette.LIGHT"
+        v-bind:second="palette.DEFAULT"
+        v-bind:third="palette.DARK"
       />
     </li>
   </ul>

@@ -3,15 +3,15 @@
 export default {
   name: 'Combination',
   props: {
-    primary: {
+    first: {
       type: String,
       required: true,
     },
-    secondary: {
+    second: {
       type: String,
       required: true,
     },
-    tertiary: {
+    third: {
       type: String,
       required: true,
     },
@@ -34,19 +34,19 @@ export default {
       cx="40"
       cy="88"
       r="40"
-      v-bind:fill="primary"
+      v-bind:fill="first"
     />
     <circle
       cx="66"
       cy="40"
       r="40"
-      v-bind:fill="secondary"
+      v-bind:fill="second"
     />
     <circle
       cx="88"
       cy="88"
       r="40"
-      v-bind:fill="tertiary"
+      v-bind:fill="third"
     />
   </svg>
 </template>
