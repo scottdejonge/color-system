@@ -60,9 +60,9 @@ table {
 
 td,
 th {
+  font-variant: tabular-nums;
   padding: 0.25em;
   text-align: left;
-  font-variant: tabular-nums;
 }
 
 section {
