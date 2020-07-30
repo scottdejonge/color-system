@@ -22,30 +22,62 @@ export default {
 <template>
   <main>
     <h1>Color System</h1>
-    <h2>Combinations</h2>
-    <ul class="combinations">
-      <li>
-        <Combination
-          v-bind:primary="$options.SHADES.CYAN.DEFAULT"
-          v-bind:secondary="$options.SHADES.BLUE.DARK"
-          v-bind:tertiary="$options.SHADES.YELLOW.DEFAULT"
-        />
-      </li>
-    </ul>
-    <h2>Base Colors</h2>
-    <Combinations
-      v-bind:palettes="$options.SHADES"
-    />
-    <h2>Swatches</h2>
-    <Swatches
-      v-bind:palettes="$options.palettes"
-    />
-    <h2>Palettes</h2>
-    <Palette
-      v-for="(palette, name) in $options.palettes" 
-      v-bind:key="name"
-      v-bind:name="name"
-      v-bind:palette="palette"
-    />
+    <section
+      aria-labelledby="combinations"
+    >
+      <h2
+        id="combinations"
+      >
+        Combinations
+      </h2>
+      <ul class="combinations">
+        <li>
+          <Combination
+            v-bind:primary="$options.SHADES.CYAN.DEFAULT"
+            v-bind:secondary="$options.SHADES.BLUE.DARK"
+            v-bind:tertiary="$options.SHADES.YELLOW.DEFAULT"
+          />
+        </li>
+      </ul>
+    </section>
+    <section
+      aria-labelledby="base-colors"
+    >
+      <h2
+        id="base-colors"
+      >
+        Base Colors
+      </h2>
+      <Combinations
+        v-bind:palettes="$options.SHADES"
+      />
+    </section>
+    <section
+      aria-labelledby="swatches"
+    >
+      <h2
+        id="swatches"
+      >
+        Swatches
+      </h2>
+      <Swatches
+        v-bind:palettes="$options.palettes"
+      />
+    </section>
+    <section
+      aria-labelledby="palettes"
+    >
+      <h2
+        id="palettes"
+      >
+        Palettes
+      </h2>
+      <Palette
+        v-for="(palette, name) in $options.palettes" 
+        v-bind:key="name"
+        v-bind:name="name"
+        v-bind:palette="palette"
+      />
+    </section>
   </main>
 </template>

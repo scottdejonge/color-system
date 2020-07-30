@@ -60,12 +60,15 @@ th {
 }
 
 section {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+section:not(:last-child) {
   border-bottom-color: hsl(210, 15%, 80%);
   border-bottom-style: solid;
   border-bottom-width: 0.125rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .combinations {
