@@ -20,8 +20,8 @@ export default {
   computed: {
     textColor() {
       return Number(this.scale) >= 50
-      ? SHADES.NEUTRAL.LIGHT
-      : SHADES.NEUTRAL.DARK;
+      ? SHADES.neutral.light
+      : SHADES.neutral.dark;
     },
     name() {
       return `${this.paletteName}-${this.scale}`;

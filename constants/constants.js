@@ -1,40 +1,40 @@
 import palettes from './palettes.json'
 
 export const SHADES = {
-  NEUTRAL: {
-    LIGHT: palettes.neutral['10'].value,
-    DEFAULT: palettes.neutral['50'].value,
-    DARK: palettes.neutral['80'].value,
+  neutral: {
+    light: palettes.neutral['10'].value,
+    default: palettes.neutral['50'].value,
+    dark: palettes.neutral['80'].value,
   },
-  CYAN: {
-    LIGHT: palettes.cyan['10'].value,
-    DEFAULT: palettes.cyan['50'].value,
-    DARK: palettes.cyan['80'].value,
+  cyan: {
+    light: palettes.cyan['10'].value,
+    default: palettes.cyan['50'].value,
+    dark: palettes.cyan['80'].value,
   },
-  BLUE: {
-    LIGHT: palettes.blue['10'].value,
-    DEFAULT: palettes.blue['50'].value,
-    DARK: palettes.blue['80'].value,
+  blue: {
+    light: palettes.blue['10'].value,
+    default: palettes.blue['50'].value,
+    dark: palettes.blue['80'].value,
   },
-  GREEN: {
-    LIGHT: palettes.green['10'].value,
-    DEFAULT: palettes.green['50'].value,
-    DARK: palettes.green['80'].value,
+  green: {
+    light: palettes.green['10'].value,
+    default: palettes.green['50'].value,
+    dark: palettes.green['80'].value,
   },
-  YELLOW: {
-    LIGHT: palettes.yellow['10'].value,
-    DEFAULT: palettes.yellow['50'].value,
-    DARK: palettes.yellow['80'].value,
+  yellow: {
+    light: palettes.yellow['10'].value,
+    default: palettes.yellow['50'].value,
+    dark: palettes.yellow['80'].value,
   },
-  RED: {
-    LIGHT: palettes.red['10'].value,
-    DEFAULT: palettes.red['50'].value,
-    DARK: palettes.red['80'].value,
+  red: {
+    light: palettes.red['10'].value,
+    default: palettes.red['50'].value,
+    dark: palettes.red['80'].value,
   },
-  MAGENTA: {
-    LIGHT: palettes.magenta['10'].value,
-    DEFAULT: palettes.magenta['50'].value,
-    DARK: palettes.magenta['80'].value,
+  magenta: {
+    light: palettes.magenta['10'].value,
+    default: palettes.magenta['50'].value,
+    dark: palettes.magenta['80'].value,
   },
 };
 

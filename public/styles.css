@@ -45,6 +45,12 @@ h3 {
   font-size: 1rem;
 }
 
+h4 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-size: 0.875rem;
+}
+
 table {
   border-color: transparent;
   border-spacing: 0;
@@ -64,6 +70,13 @@ section {
   margin-top: 4rem;
 }
 
+.box {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
 .combinations {
   display: flex;
   flex-wrap: wrap;
@@ -75,6 +88,11 @@ section {
   flex-grow: 1;
   flex-shrink: 1;
   padding: 0.5rem;
+}
+
+.combination {
+  display: block;
+  margin: auto;
 }
 
 .swatches {

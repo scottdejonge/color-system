@@ -12,6 +12,10 @@ export default {
       type: String,
       required: true,
     },
+    styled: {
+      type: Boolean,
+      default: true,
+    },
     versus: {
       type: String,
       required: true,
@@ -20,20 +24,20 @@ export default {
   computed: {
     background() {
       return this.contrast >= WCAG_CONTRAST_RATIO.AA
-      ? SHADES.GREEN.LIGHT
-      : SHADES.RED.LIGHT;
+      ? SHADES.green.light
+      : SHADES.red.light;
     },
     color() {
       return this.contrast >= WCAG_CONTRAST_RATIO.AA
-      ? SHADES.GREEN.DARK
-      : SHADES.RED.DARK;
+      ? SHADES.green.dark
+      : SHADES.red.dark;
     },
     contrast() {
       const ratio = Color(this.value).contrast(Color(this.versus));
       return ratio.toFixed(2);
     },
     style() {
-      return `background: ${this.background}; color: ${this.color}`;
+      return this.styled  ? `background: ${this.background}; color: ${this.color}` : '';
     },
   },
 }

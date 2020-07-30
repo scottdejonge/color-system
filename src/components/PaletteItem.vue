@@ -64,22 +64,22 @@ export default {
     </td>
     <td>
       <Sample
-        v-bind:background="$options.SHADES.NEUTRAL.DARK"
+        v-bind:background="$options.SHADES.neutral.dark"
         v-bind:color="value"
       />
       <Contrast
         v-bind:value="value"
-        v-bind:versus="$options.SHADES.NEUTRAL.DARK"
+        v-bind:versus="$options.SHADES.neutral.dark"
       />
     </td>
     <td>
       <Sample
-        v-bind:background="$options.SHADES.NEUTRAL.LIGHT"
+        v-bind:background="$options.SHADES.neutral.light"
         v-bind:color="value"
       />
       <Contrast
         v-bind:value="value"
-        v-bind:versus="$options.SHADES.NEUTRAL.LIGHT"
+        v-bind:versus="$options.SHADES.neutral.light"
       />
     </td>
   </tr>
