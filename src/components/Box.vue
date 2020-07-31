@@ -7,6 +7,10 @@ export default {
       type: String,
       required: true,
     },
+    border: {
+      type: String,
+      required: true,
+    },
     color: {
       type: String,
       required: true,
@@ -14,7 +18,11 @@ export default {
   },
   computed: {
     style() {
-      return `background-color:${this.background}; color:${this.color}`
+      return `
+        background-color:${this.background};
+        border-color:${this.border};
+        color:${this.color};
+      `;
     },
   },
 }

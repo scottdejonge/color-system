@@ -34,6 +34,7 @@ export default {
       <h4>Light</h4>
       <Box
         v-bind:background="palette.light"
+        v-bind:border="palette.default"
         v-bind:color="palette.dark"
       >
         Contrast
@@ -46,6 +47,7 @@ export default {
       <h4>Dark</h4>
       <Box
         v-bind:background="palette.dark"
+        v-bind:border="palette.default"
         v-bind:color="palette.light"
       >
         Contrast

@@ -71,8 +71,10 @@ section {
 }
 
 .box {
+  border-left-width: 0.75rem;
+  border-left-style: solid;
   border-radius: 0.5rem;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem;
   font-size: 0.875rem;
   font-weight: 500;
 }
