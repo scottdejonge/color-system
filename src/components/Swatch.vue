@@ -1,8 +1,8 @@
 <script>
-import { SHADES } from '../../constants/constants'
+import { SHADES } from "../../utils/color-functions";
 
 export default {
-  name: 'Swatch',
+  name: "Swatch",
   props: {
     color: {
       type: String,
@@ -20,26 +20,21 @@ export default {
   computed: {
     textColor() {
       return Number(this.scale) >= 50
-      ? SHADES.neutral.light
-      : SHADES.neutral.dark;
+        ? SHADES.neutral.light
+        : SHADES.neutral.dark;
     },
     name() {
       return `${this.paletteName}-${this.scale}`;
     },
     style() {
-      return `background-color:${this.color}; color:${this.textColor}`
+      return `background-color:${this.color}; color:${this.textColor}`;
     },
   },
-}
+};
 </script>
 
 <template>
-  <div
-    class="swatch"
-    v-bind:style="style"
-  >
-    <code>
-      {{ name }}
-    </code>
+  <div class="swatch" v-bind:style="style">
+    <code>{{ name }}</code>
   </div>
 </template>

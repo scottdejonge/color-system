@@ -1,12 +1,12 @@
 <script>
-import Color from 'color'
-import Contrast from './Contrast.vue'
-import Sample from './Sample.vue'
-import Swatch from './Swatch.vue'
-import { SHADES } from '../../constants/constants'
+import Color from "color";
+import Contrast from "./Contrast.vue";
+import Sample from "./Sample.vue";
+import Swatch from "./Swatch.vue";
+import { SHADES } from "../../utils/color-functions";
 
 export default {
-  name: 'PaletteItem',
+  name: "PaletteItem",
   SHADES,
   components: {
     Contrast,
@@ -15,7 +15,7 @@ export default {
   },
   props: {
     scale: {
-      type: String,
+      type: Number,
       required: true,
     },
     paletteName: {
@@ -35,7 +35,7 @@ export default {
       return `${this.paletteName}-${this.scale}`;
     },
   },
-}
+};
 </script>
 
 <template>
@@ -48,19 +48,13 @@ export default {
       />
     </th>
     <td>
-      <code>
-        {{ color.hex() }}
-      </code>
+      <code>{{ color.hex() }}</code>
     </td>
     <td>
-      <code>
-        {{ color.hsl() }}
-      </code>
+      <code>{{ color.hsl().round().string() }}</code>
     </td>
     <td>
-      <code>
-        {{ color.rgb() }}
-      </code>
+      <code>{{ color.rgb().round().string() }}</code>
     </td>
     <td>
       <Sample

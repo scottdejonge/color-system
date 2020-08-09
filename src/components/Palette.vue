@@ -1,8 +1,8 @@
 <script>
-import PaletteItem from './PaletteItem.vue'
+import PaletteItem from "./PaletteItem.vue";
 
 export default {
-  name: 'Palette',
+  name: "Palette",
   components: {
     PaletteItem,
   },
@@ -12,7 +12,7 @@ export default {
       required: true,
     },
     palette: {
-      type: Object,
+      type: Array,
       required: true,
     },
   },
@@ -21,18 +21,12 @@ export default {
       return `section-${this.name.toLowerCase()}`;
     },
   },
-}
+};
 </script>
 
 <template>
-  <section
-    v-bind:aria-labelledby="headingId"
-  >
-    <h3
-      v-bind:id="headingId"
-    >
-      {{ name }}
-    </h3>
+  <section v-bind:aria-labelledby="headingId">
+    <h3 v-bind:id="headingId">{{ name }}</h3>
     <table>
       <thead>
         <tr>
@@ -46,11 +40,11 @@ export default {
       </thead>
       <tbody>
         <PaletteItem
-          v-for="(item, scale) in palette"
-          v-bind:key="scale"
-          v-bind:scale="scale"
+          v-for="(item, i) in palette"
+          v-bind:key="i"
+          v-bind:scale="i * 10"
           v-bind:palette-name="name"
-          v-bind:value="item.value"
+          v-bind:value="item"
         />
       </tbody>
     </table>

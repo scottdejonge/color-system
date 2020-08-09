@@ -1,12 +1,10 @@
 <script>
-import Color from 'color'
-import {
-  SHADES,
-  WCAG_CONTRAST_RATIO,
-} from '../../constants/constants'
+import Color from "color";
+import { SHADES } from "../../utils/color-functions";
+import { WCAG_CONTRAST_RATIO } from "../../utils/constants";
 
 export default {
-  name: 'Contrast',
+  name: "Contrast",
   props: {
     value: {
       type: String,
@@ -24,30 +22,27 @@ export default {
   computed: {
     background() {
       return this.contrast >= WCAG_CONTRAST_RATIO.AA
-      ? SHADES.green.light
-      : SHADES.red.light;
+        ? SHADES.green.light
+        : SHADES.red.light;
     },
     color() {
       return this.contrast >= WCAG_CONTRAST_RATIO.AA
-      ? SHADES.green.dark
-      : SHADES.red.dark;
+        ? SHADES.green.dark
+        : SHADES.red.dark;
     },
     contrast() {
       const ratio = Color(this.value).contrast(Color(this.versus));
       return ratio.toFixed(2);
     },
     style() {
-      return this.styled  ? `background: ${this.background}; color: ${this.color}` : '';
+      return this.styled
+        ? `background: ${this.background}; color: ${this.color}`
+        : "";
     },
   },
-}
+};
 </script>
 
 <template>
-  <span
-    class="contrast"
-    v-bind:style="style"
-  >
-    {{ contrast }}
-  </span>
+  <span class="contrast" v-bind:style="style">{{ contrast }}</span>
 </template>
