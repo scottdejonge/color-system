@@ -1,6 +1,6 @@
 <script>
 import Color from "color";
-import { SHADES } from "../../utils/color-functions";
+import { store } from "../../utils/color-functions";
 import { WCAG_CONTRAST_RATIO } from "../../utils/constants";
 
 export default {
@@ -22,13 +22,13 @@ export default {
   computed: {
     background() {
       return this.contrast >= WCAG_CONTRAST_RATIO.AA
-        ? SHADES.green.light
-        : SHADES.red.light;
+        ? store.shades.green.light
+        : store.shades.red.light;
     },
     color() {
       return this.contrast >= WCAG_CONTRAST_RATIO.AA
-        ? SHADES.green.dark
-        : SHADES.red.dark;
+        ? store.shades.green.dark
+        : store.shades.red.dark;
     },
     contrast() {
       const ratio = Color(this.value).contrast(Color(this.versus));

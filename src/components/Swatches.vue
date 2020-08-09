@@ -7,7 +7,7 @@ export default {
     Swatch,
   },
   props: {
-    palettes: {
+    scales: {
       type: Object,
       required: true,
     },
@@ -17,11 +17,15 @@ export default {
 
 <template>
   <ul class="swatches">
-    <li v-for="(palette, name) in palettes" v-bind:key="name">
+    <li v-for="(scale, name) in scales" v-bind:key="name">
       <h3>{{ name }}</h3>
       <ul>
-        <li v-for="(item, i) in palette" v-bind:key="i">
-          <Swatch v-bind:color="item" v-bind:palette-name="name" v-bind:scale="i * 10" />
+        <li v-for="(item, i) in scale" v-bind:key="i">
+          <Swatch
+            v-bind:color="item"
+            v-bind:scale-name="name"
+            v-bind:scale="i * 10"
+          />
         </li>
       </ul>
     </li>

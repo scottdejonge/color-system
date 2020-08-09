@@ -1,60 +1,59 @@
 <script>
-import Box from './Box.vue'
-import Combination from './Combination.vue'
-import Contrast from './Contrast.vue'
+import Box from "./Box.vue";
+import Combination from "./Combination.vue";
+import Contrast from "./Contrast.vue";
 
 export default {
-  name: 'Combinations',
+  name: "Combinations",
   components: {
     Box,
     Combination,
     Contrast,
   },
   props: {
-    palettes: {
+    scales: {
       type: Object,
       required: true,
     },
   },
-}
+};
 </script>
 
 <template>
   <ul class="combinations">
-    <li
-      v-for="(palette, name) in palettes" 
-      v-bind:key="name"
-    >
+    <li v-for="(scale, name) in scales" v-bind:key="name">
       <h3>{{ name.toLowerCase() }}</h3>
-      <Combination
-        v-bind:first="palette.light"
-        v-bind:second="palette.default"
-        v-bind:third="palette.dark"
-      />
+      <button class="edit-color">
+        <Combination
+          v-bind:first="scale.light"
+          v-bind:second="scale.default"
+          v-bind:third="scale.dark"
+        />
+      </button>
       <h4>Light</h4>
       <Box
-        v-bind:background="palette.light"
-        v-bind:border="palette.default"
-        v-bind:color="palette.dark"
+        v-bind:background="scale.light"
+        v-bind:border="scale.default"
+        v-bind:color="scale.dark"
       >
         Contrast
         <Contrast
           v-bind:styled="false"
-          v-bind:value="palette.light"
-          v-bind:versus="palette.dark"
+          v-bind:value="scale.light"
+          v-bind:versus="scale.dark"
         />
       </Box>
       <h4>Dark</h4>
       <Box
-        v-bind:background="palette.dark"
-        v-bind:border="palette.default"
-        v-bind:color="palette.light"
+        v-bind:background="scale.dark"
+        v-bind:border="scale.default"
+        v-bind:color="scale.light"
       >
         Contrast
         <Contrast
           v-bind:styled="false"
-          v-bind:value="palette.light"
-          v-bind:versus="palette.dark"
+          v-bind:value="scale.light"
+          v-bind:versus="scale.dark"
         />
       </Box>
     </li>

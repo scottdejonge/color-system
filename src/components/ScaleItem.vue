@@ -3,11 +3,11 @@ import Color from "color";
 import Contrast from "./Contrast.vue";
 import Sample from "./Sample.vue";
 import Swatch from "./Swatch.vue";
-import { SHADES } from "../../utils/color-functions";
+import { store } from "../../utils/color-functions";
 
 export default {
-  name: "PaletteItem",
-  SHADES,
+  name: "ScaleItem",
+  store,
   components: {
     Contrast,
     Sample,
@@ -18,7 +18,7 @@ export default {
       type: Number,
       required: true,
     },
-    paletteName: {
+    scaleName: {
       type: String,
       required: true,
     },
@@ -32,7 +32,7 @@ export default {
       return Color(this.value);
     },
     name() {
-      return `${this.paletteName}-${this.scale}`;
+      return `${this.scaleName}-${this.scale}`;
     },
   },
 };
@@ -43,7 +43,7 @@ export default {
     <th>
       <Swatch
         v-bind:color="value"
-        v-bind:palette-name="paletteName"
+        v-bind:scale-name="scaleName"
         v-bind:scale="scale"
       />
     </th>
@@ -58,22 +58,22 @@ export default {
     </td>
     <td>
       <Sample
-        v-bind:background="$options.SHADES.neutral.dark"
+        v-bind:background="$options.store.shades.neutral.dark"
         v-bind:color="value"
       />
       <Contrast
         v-bind:value="value"
-        v-bind:versus="$options.SHADES.neutral.dark"
+        v-bind:versus="$options.store.shades.neutral.dark"
       />
     </td>
     <td>
       <Sample
-        v-bind:background="$options.SHADES.neutral.light"
+        v-bind:background="$options.store.shades.neutral.light"
         v-bind:color="value"
       />
       <Contrast
         v-bind:value="value"
-        v-bind:versus="$options.SHADES.neutral.light"
+        v-bind:versus="$options.store.shades.neutral.light"
       />
     </td>
   </tr>

@@ -1,18 +1,19 @@
 <script>
-import { SHADES, PALETTES } from "../utils/color-functions";
+import { store } from "../utils/color-functions";
 import Combination from "./components/Combination.vue";
 import Combinations from "./components/Combinations.vue";
-import Palette from "./components/Palette.vue";
+import Scale from "./components/Scale.vue";
 import Swatches from "./components/Swatches.vue";
+
+store._update(); // Initialise Store
 
 export default {
   name: "App",
-  palettes: PALETTES,
-  SHADES,
+  store,
   components: {
     Combination,
     Combinations,
-    Palette,
+    Scale,
     Swatches,
   },
 };
@@ -26,28 +27,28 @@ export default {
       <ul class="combinations">
         <li>
           <Combination
-            v-bind:first="$options.SHADES.cyan.default"
-            v-bind:second="$options.SHADES.blue.dark"
-            v-bind:third="$options.SHADES.yellow.default"
+            v-bind:first="$options.store.shades.cyan.default"
+            v-bind:second="$options.store.shades.blue.dark"
+            v-bind:third="$options.store.shades.yellow.default"
           />
         </li>
       </ul>
     </section>
     <section aria-labelledby="base-colors">
       <h2 id="base-colors">Base Colors</h2>
-      <Combinations v-bind:palettes="$options.SHADES" />
+      <Combinations v-bind:scales="$options.store.shades" />
     </section>
     <section aria-labelledby="swatches">
       <h2 id="swatches">Swatches</h2>
-      <Swatches v-bind:palettes="$options.palettes" />
+      <Swatches v-bind:scales="$options.store.scales" />
     </section>
-    <section aria-labelledby="palettes">
-      <h2 id="palettes">Palettes</h2>
-      <Palette
-        v-for="(palette, name) in $options.palettes"
+    <section aria-labelledby="scales">
+      <h2 id="scales">Scales</h2>
+      <Scale
+        v-for="(scale, name) in $options.store.scales"
         v-bind:key="name"
         v-bind:name="name"
-        v-bind:palette="palette"
+        v-bind:scale="scale"
       />
     </section>
   </main>

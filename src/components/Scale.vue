@@ -1,17 +1,17 @@
 <script>
-import PaletteItem from "./PaletteItem.vue";
+import ScaleItem from "./ScaleItem.vue";
 
 export default {
-  name: "Palette",
+  name: "Scale",
   components: {
-    PaletteItem,
+    ScaleItem,
   },
   props: {
     name: {
       type: String,
       required: true,
     },
-    palette: {
+    scale: {
       type: Array,
       required: true,
     },
@@ -39,11 +39,11 @@ export default {
         </tr>
       </thead>
       <tbody>
-        <PaletteItem
-          v-for="(item, i) in palette"
+        <ScaleItem
+          v-for="(item, i) in scale"
           v-bind:key="i"
           v-bind:scale="i * 10"
-          v-bind:palette-name="name"
+          v-bind:scale-name="name"
           v-bind:value="item"
         />
       </tbody>

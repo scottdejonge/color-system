@@ -1,14 +1,15 @@
 <script>
-import { SHADES } from "../../utils/color-functions";
+import { store } from "../../utils/color-functions";
 
 export default {
   name: "Swatch",
+  store,
   props: {
     color: {
       type: String,
       required: true,
     },
-    paletteName: {
+    scaleName: {
       type: String,
       required: true,
     },
@@ -20,11 +21,11 @@ export default {
   computed: {
     textColor() {
       return Number(this.scale) >= 50
-        ? SHADES.neutral.light
-        : SHADES.neutral.dark;
+        ? store.shades.neutral.light
+        : store.shades.neutral.dark;
     },
     name() {
-      return `${this.paletteName}-${this.scale}`;
+      return `${this.scaleName}-${this.scale}`;
     },
     style() {
       return `background-color:${this.color}; color:${this.textColor}`;
