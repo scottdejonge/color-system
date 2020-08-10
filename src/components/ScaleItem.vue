@@ -1,41 +1,41 @@
 <script>
-import Color from "color";
-import Contrast from "./Contrast.vue";
-import Sample from "./Sample.vue";
-import Swatch from "./Swatch.vue";
-import { store } from "../../utils/store";
+  import Color from 'color';
+  import Contrast from './Contrast.vue';
+  import Sample from './Sample.vue';
+  import Swatch from './Swatch.vue';
+  import { store } from '../../utils/store';
 
-export default {
-  name: "ScaleItem",
-  store,
-  components: {
-    Contrast,
-    Sample,
-    Swatch,
-  },
-  props: {
-    scale: {
-      type: Number,
-      required: true,
+  export default {
+    name: 'ScaleItem',
+    store,
+    components: {
+      Contrast,
+      Sample,
+      Swatch,
     },
-    scaleName: {
-      type: String,
-      required: true,
+    props: {
+      scale: {
+        type: Number,
+        required: true,
+      },
+      scaleName: {
+        type: String,
+        required: true,
+      },
+      value: {
+        type: String,
+        required: true,
+      },
     },
-    value: {
-      type: String,
-      required: true,
+    computed: {
+      color() {
+        return Color(this.value);
+      },
+      name() {
+        return `${this.scaleName}-${this.scale}`;
+      },
     },
-  },
-  computed: {
-    color() {
-      return Color(this.value);
-    },
-    name() {
-      return `${this.scaleName}-${this.scale}`;
-    },
-  },
-};
+  };
 </script>
 
 <template>

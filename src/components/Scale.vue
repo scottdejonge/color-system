@@ -1,32 +1,34 @@
 <script>
-import ScaleItem from "./ScaleItem.vue";
+  import ScaleItem from './ScaleItem.vue';
 
-export default {
-  name: "Scale",
-  components: {
-    ScaleItem,
-  },
-  props: {
-    name: {
-      type: String,
-      required: true,
+  export default {
+    name: 'Scale',
+    components: {
+      ScaleItem,
     },
-    scale: {
-      type: Array,
-      required: true,
+    props: {
+      name: {
+        type: String,
+        required: true,
+      },
+      scale: {
+        type: Array,
+        required: true,
+      },
     },
-  },
-  computed: {
-    headingId() {
-      return `section-${this.name.toLowerCase()}`;
+    computed: {
+      headingId() {
+        return `section-${this.name.toLowerCase()}`;
+      },
     },
-  },
-};
+  };
 </script>
 
 <template>
   <section v-bind:aria-labelledby="headingId">
-    <h3 v-bind:id="headingId">{{ name }}</h3>
+    <h3 v-bind:id="headingId">
+      {{ name }}
+    </h3>
     <table>
       <thead>
         <tr>

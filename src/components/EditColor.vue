@@ -1,81 +1,72 @@
 <script>
-import { store, getScale, getShades } from "../../utils/store";
-import SliderInput from "./SliderInput";
-import Combination from "./Combination";
-import Swatch from "./Swatch";
+  import { store, getScale, getShades } from '../../utils/store';
+  import Combination from './Combination.vue';
+  import SliderInput from './SliderInput.vue';
+  import Swatch from './Swatch.vue';
 
-export default {
-  name: "EditColor",
-  store,
-  components: { SliderInput, Combination, Swatch },
-  props: {
-    colorName: {
-      type: String,
-      required: true,
+  export default {
+    name: 'EditColor',
+    store,
+    components: {
+      Combination,
+      SliderInput,
+      Swatch,
     },
-    onUpdate: {
-      type: Function,
-      required: true,
+    props: {
+      colorName: {
+        type: String,
+        required: true,
+      },
+      onUpdate: {
+        type: Function,
+        required: true,
+      },
     },
-  },
-  data() {
-    return {
-      color: {},
-      // value: "hsl(40, 100%, 55%)",
-      // darkness: 45,
-      // darkHueAngle: 20,
-      // darkSaturation: 120, // Technically I should not go over 100 but having trouble matching the vibrancy. Maybe I should rethink how I apply saturation curves.
-      // lightness: 95,
-      // lightHueAngle: -5,
-      // lightSaturation: 100,
-      // hueEasing: "easeOutQuart",
-      // saturationEasing: "easeInOutSine",
-      // lightnessEasing: "easeInOutSine",
-      // darknessEasing: "easeInOutSine",
-    };
-  },
-  methods: {
-    updateColor() {
-      console.log(this.colorName, this.color.darkness, { ...this.color }); // eslint-disable-line
-      this.$props.onUpdate(this.colorName, this.color);
+    data() {
+      return {
+        color: {},
+      };
     },
-  },
-  computed: {
-    scale() {
-      if (!this.colorName) return null;
-      const color = Object.assign(
-        {},
-        store.palette[this.colorName],
-        this.color
-      );
+    computed: {
+      scale() {
+        if (!this.colorName) return null;
+        const color = {
+          ...store.palette[this.colorName],
+          ...this.color,
+        };
       console.log({ color }); // eslint-disable-line
 
-      return getScale({
-        lightSteps: store.lightSteps,
-        darkSteps: store.darkSteps,
-        palette: color,
-      });
+        return getScale({
+          lightSteps: store.lightSteps,
+          darkSteps: store.darkSteps,
+          palette: color,
+        });
+      },
+      shades() {
+        if (!this.colorName) return null;
+        const color = {
+          ...store.palette[this.colorName],
+          ...this.color,
+        };
+        const scale = getScale({
+          lightSteps: store.lightSteps,
+          darkSteps: store.darkSteps,
+          palette: color,
+        });
+        return getShades({
+          lightSteps: store.lightSteps,
+          darkSteps: store.darkSteps,
+          scale,
+        });
+      },
     },
-    shades() {
-      if (!this.colorName) return null;
-      const color = Object.assign(
-        {},
-        store.palette[this.colorName],
-        this.color
-      );
-      const scale = getScale({
-        lightSteps: store.lightSteps,
-        darkSteps: store.darkSteps,
-        palette: color,
-      });
-      return getShades({
-        lightSteps: store.lightSteps,
-        darkSteps: store.darkSteps,
-        scale,
-      });
+    methods: {
+      updateColor() {
+        console.log(this.colorName, this.color.darkness, { ...this.color }); // eslint-disable-line
+        this.$props.onUpdate(this.colorName, this.color);
+      },
     },
-  },
-};
+  };
 </script>
 
 <template>
@@ -89,7 +80,10 @@ export default {
         />
       </div>
       <ul class="edit-scale">
-        <li v-for="(item, i) in scale" v-bind:key="i">
+        <li
+          v-for="(item, i) in scale"
+          v-bind:key="i"
+        >
           <Swatch
             v-bind:color="item"
             v-bind:scale-name="colorName"
@@ -99,58 +93,72 @@ export default {
       </ul>
     </div>
     <div class="edit-inputs">
-      <p><input v-model="color.value" placeholder="color" type="color" /></p>
+      <p>
+        <input
+          v-model="color.value"
+          placeholder="color"
+          type="color"
+        />
+      </p>
       <SliderInput
-        v-model="color.darkness"
         id="darkness"
+        v-model="color.darkness"
         label="Darkness"
         min="0"
         max="100"
       />
       <SliderInput
-        v-model="color.darkHueAngle"
         id="darkHueAngle"
+        v-model="color.darkHueAngle"
         label="Dark Hue Angle"
         min="-360"
         max="360"
       />
       <SliderInput
-        v-model="color.darkSaturation"
         id="darkSaturation"
+        v-model="color.darkSaturation"
         label="Dark Saturation"
         min="0"
         max="100"
       />
       <p>
-        <input v-model="color.darknessEasing" placeholder="darknessEasing" />
+        <input
+          v-model="color.darknessEasing"
+          placeholder="darknessEasing"
+        />
       </p>
 
       <SliderInput
-        v-model="color.lightness"
         id="lightness"
+        v-model="color.lightness"
         label="Lightness"
         min="0"
         max="100"
       />
       <SliderInput
-        v-model="color.lightHueAngle"
         id="lightHueAngle"
+        v-model="color.lightHueAngle"
         label="Light Hue Angle"
         min="-360"
         max="360"
       />
       <SliderInput
-        v-model="color.lightSaturation"
         id="lightSaturation"
+        v-model="color.lightSaturation"
         label="Light Saturation"
         min="0"
         max="100"
       />
       <p>
-        <input v-model="color.lightnessEasing" placeholder="lightnessEasing" />
+        <input
+          v-model="color.lightnessEasing"
+          placeholder="lightnessEasing"
+        />
       </p>
     </div>
 
-    <button @click="updateColor">Update</button>
+    <button v-on:click="updateColor">
+      Update
+    </button>
   </div>
 </template>

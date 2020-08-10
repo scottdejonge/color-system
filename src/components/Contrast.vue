@@ -1,48 +1,51 @@
 <script>
-import Color from "color";
-import { store } from "../../utils/store";
-import { WCAG_CONTRAST_RATIO } from "../../utils/constants";
+  import Color from 'color';
+  import { store } from '../../utils/store';
+  import { WCAG_CONTRAST_RATIO } from '../../utils/constants';
 
-export default {
-  name: "Contrast",
-  props: {
-    value: {
-      type: String,
-      required: true,
+  export default {
+    name: 'Contrast',
+    props: {
+      styled: {
+        type: Boolean,
+        default: true,
+      },
+      value: {
+        type: String,
+        required: true,
+      },
+      versus: {
+        type: String,
+        required: true,
+      },
     },
-    styled: {
-      type: Boolean,
-      default: true,
+    computed: {
+      background() {
+        return this.contrast >= WCAG_CONTRAST_RATIO.AA
+          ? store.shades.green.light
+          : store.shades.red.light;
+      },
+      color() {
+        return this.contrast >= WCAG_CONTRAST_RATIO.AA
+          ? store.shades.green.dark
+          : store.shades.red.dark;
+      },
+      contrast() {
+        const ratio = Color(this.value).contrast(Color(this.versus));
+        return ratio.toFixed(2);
+      },
+      style() {
+        return this.styled
+          ? `background: ${this.background}; color: ${this.color}`
+          : '';
+      },
     },
-    versus: {
-      type: String,
-      required: true,
-    },
-  },
-  computed: {
-    background() {
-      return this.contrast >= WCAG_CONTRAST_RATIO.AA
-        ? store.shades.green.light
-        : store.shades.red.light;
-    },
-    color() {
-      return this.contrast >= WCAG_CONTRAST_RATIO.AA
-        ? store.shades.green.dark
-        : store.shades.red.dark;
-    },
-    contrast() {
-      const ratio = Color(this.value).contrast(Color(this.versus));
-      return ratio.toFixed(2);
-    },
-    style() {
-      return this.styled
-        ? `background: ${this.background}; color: ${this.color}`
-        : "";
-    },
-  },
-};
+  };
 </script>
 
 <template>
-  <span class="contrast" v-bind:style="style">{{ contrast }}</span>
+  <span
+    class="contrast"
+    v-bind:style="style"
+  >{{ contrast }}</span>
 </template>

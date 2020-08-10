@@ -1,33 +1,39 @@
 <script>
-import Box from "./Box.vue";
-import Combination from "./Combination.vue";
-import Contrast from "./Contrast.vue";
+  import Box from './Box.vue';
+  import Combination from './Combination.vue';
+  import Contrast from './Contrast.vue';
 
-export default {
-  name: "Combinations",
-  components: {
-    Box,
-    Combination,
-    Contrast,
-  },
-  props: {
-    scales: {
-      type: Object,
-      required: true,
+  export default {
+    name: 'Combinations',
+    components: {
+      Box,
+      Combination,
+      Contrast,
     },
-    editColor: {
-      type: Function,
-      required: true,
+    props: {
+      editColor: {
+        type: Function,
+        required: true,
+      },
+      scales: {
+        type: Object,
+        required: true,
+      },
     },
-  },
-};
+  };
 </script>
 
 <template>
   <ul class="combinations">
-    <li v-for="(scale, name) in scales" v-bind:key="name">
+    <li
+      v-for="(scale, name) in scales"
+      v-bind:key="name"
+    >
       <h3>{{ name.toLowerCase() }}</h3>
-      <button class="edit-color" @click="editColor(name)">
+      <button
+        class="edit-color"
+        v-on:click="editColor(name)"
+      >
         <Combination
           v-bind:first="scale.light"
           v-bind:second="scale.default"
