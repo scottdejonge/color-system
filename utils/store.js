@@ -1,6 +1,6 @@
-import Color from "color";
-import * as easingFunctions from "js-easing-functions";
-import defaultPalette from "./default-palette";
+import Color from 'color';
+import * as easingFunctions from 'js-easing-functions';
+import defaultPalette from './default-palette';
 
 export const getColorsList = ({
   steps,
@@ -15,8 +15,7 @@ export const getColorsList = ({
 }) => {
   const colorsList = [];
 
-  let step;
-  for (step = 0; step < steps; step++) {
+  steps.forEach((step) => {
     colorsList.push(
       Color(baseColor)
         .rotate(easingFunctions[hueEasing](step + 1, 0, -hueAngle, steps))
@@ -25,8 +24,8 @@ export const getColorsList = ({
             step + 1,
             0,
             saturation / 100,
-            steps
-          )
+            steps,
+          ),
         )
         .mix(
           Color(mixColor),
@@ -34,21 +33,21 @@ export const getColorsList = ({
             step + 1,
             0,
             colorShiftAmount / 100,
-            steps
-          )
+            steps,
+          ),
         )
-        .string()
+        .string(),
     );
-  }
+  });
 
   return colorsList;
 };
 
-export const getScale = ({ darkSteps, lightSteps, palette }) => {
+export const getColorScale = ({ darkSteps, lightSteps, palette }) => {
   const darkColors = getColorsList({
     steps: darkSteps,
     colorShiftAmount: palette.darkness,
-    mixColor: "black",
+    mixColor: 'black',
     hueAngle: palette.darkHueAngle,
     saturation: palette.darkSaturation,
     baseColor: palette.value,
@@ -60,7 +59,7 @@ export const getScale = ({ darkSteps, lightSteps, palette }) => {
   const lightColors = getColorsList({
     steps: lightSteps,
     colorShiftAmount: palette.lightness,
-    mixColor: "white",
+    mixColor: 'white',
     hueAngle: palette.lightHueAngle,
     saturation: palette.lightSaturation,
     baseColor: palette.value,
@@ -69,13 +68,18 @@ export const getScale = ({ darkSteps, lightSteps, palette }) => {
     lightnessEasing: palette.lightnessEasing,
   }).reverse();
 
-  return [...lightColors, palette.value, ...darkColors];
+  return [
+    ...lightColors,
+    palette.value,
+    ...darkColors,
+  ];
 };
 
-export const getShades = ({ darkSteps, lightSteps, scale }) => {
+export const getColorShades = ({ darkSteps, lightSteps, scale }) => {
   const LIGHT = Math.round(lightSteps * 0.2);
   const DEFAULT = lightSteps;
   const DARK = lightSteps + Math.round(darkSteps * 0.8);
+
   return {
     light: scale[LIGHT],
     default: scale[DEFAULT],
@@ -84,37 +88,42 @@ export const getShades = ({ darkSteps, lightSteps, scale }) => {
 };
 
 export const store = {
-  _getScale() {
+  getScale() {
     const PALETTES = {};
-    for (const [key, palette] of Object.entries(this.palette)) {
-      PALETTES[key] = getScale({
+
+    Object.entries(this.palette).map((palette) => {
+      const item = {
         darkSteps: this.darkSteps,
         lightSteps: this.lightSteps,
         palette,
-      });
-    }
+      };
+      return Object.assign(item, PALETTES);
+    });
+
     return PALETTES;
   },
-  _getShades() {
+  getShades() {
     // Shades reduces a scale to a light, dark and default value
     const SHADES = {};
 
-    for (const [key, scale] of Object.entries(this.scales)) {
-      SHADES[key] = getShades({
+    Object.entries(this.scales).map((scale) => {
+      const item = {
         darkSteps: this.darkSteps,
         lightSteps: this.lightSteps,
         scale,
-      });
-    }
+      };
+      return Object.assign(item, SHADES);
+    });
+
     return SHADES;
   },
   palette: defaultPalette,
   darkSteps: 5,
   lightSteps: 5,
   get scales() {
-    return this._getScale();
+    return this.getScale();
   },
   get shades() {
-    return this._getShades();
+    return this.getShades();
   },
 };
