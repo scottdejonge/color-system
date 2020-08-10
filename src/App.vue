@@ -55,13 +55,12 @@ export default {
         </li>
       </ul>
     </section>
+    <section v-if="editingColor" aria-labelledby="edit-color">
+      <h2 id="edit-color">Edit Color</h2>
+      <EditColor v-bind:onUpdate="updatePalette" v-bind:colorName="editingColor" />
+    </section>
     <section aria-labelledby="base-colors">
       <h2 id="base-colors">Base Colors</h2>
-      <EditColor
-        v-if="editingColor"
-        v-bind:onUpdate="updatePalette"
-        v-bind:colorName="editingColor"
-      />
       <Combinations v-bind:scales="store.shades" v-bind:editColor="editColor" />
     </section>
     <section aria-labelledby="swatches">

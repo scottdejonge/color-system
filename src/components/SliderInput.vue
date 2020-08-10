@@ -51,11 +51,10 @@ export default {
 </script>
 
 <template>
-  <p>
-    <label for="id">
-      {{ label }}
-    </label>
+  <p style="display: flex;">
+    <label for="id" style="flex-grow: 1;">{{ label }}</label>
     <input
+      style="width: 140px;"
       v-bind="$attrs"
       v-bind:value="value"
       v-on="inputListeners"

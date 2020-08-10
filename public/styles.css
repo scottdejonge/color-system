@@ -173,14 +173,39 @@ section {
   align-items: center;
   justify-content: space-around;
 }
+
 .edit-sampler--combination {
-  flex-basis: 0;
+  width: 200px;
+  margin-right: 100px;
+  flex-basis: 1;
 }
 
 .edit-scale {
   display: flex;
+  flex-grow: 1;
+}
+
+.edit-scale li {
+  flex-grow: 1;
+  flex-basis: 1;
+  text-align: center;
 }
 
 .edit-inputs {
   display: flex;
+}
+
+.color-picker {
+  width: 200px;
+  margin-right: 100px;
+}
+.edit-inputs--lightness,
+.edit-inputs--darkness {
+  width: 300px;
+  margin-right: 50px;
+}
+
+.vacp-copy-button,
+.vacp-range-input-label--alpha {
+  display: none !important;
 }
