@@ -1,28 +1,28 @@
 <script>
-import Box from './Box.vue'
-import Combination from './Combination.vue'
-import Contrast from './Contrast.vue'
+  import Box from './Box.vue';
+  import Combination from './Combination.vue';
+  import Contrast from './Contrast.vue';
 
-export default {
-  name: 'Combinations',
-  components: {
-    Box,
-    Combination,
-    Contrast,
-  },
-  props: {
-    palettes: {
-      type: Object,
-      required: true,
+  export default {
+    name: 'Combinations',
+    components: {
+      Box,
+      Combination,
+      Contrast,
     },
-  },
-}
+    props: {
+      palettes: {
+        type: Object,
+        required: true,
+      },
+    },
+  };
 </script>
 
 <template>
   <ul class="combinations">
     <li
-      v-for="(palette, name) in palettes" 
+      v-for="(palette, name) in palettes"
       v-bind:key="name"
     >
       <h3>{{ name.toLowerCase() }}</h3>

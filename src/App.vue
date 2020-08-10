@@ -1,22 +1,22 @@
 <script>
-import palettes from '../constants/palettes.json'
-import { SHADES } from '../constants/constants'
-import Combination from './components/Combination.vue'
-import Combinations from './components/Combinations.vue'
-import Palette from './components/Palette.vue'
-import Swatches from './components/Swatches.vue'
+  import palettes from '../constants/palettes.json';
+  import { SHADES } from '../constants/constants';
+  import Combination from './components/Combination.vue';
+  import Combinations from './components/Combinations.vue';
+  import Palette from './components/Palette.vue';
+  import Swatches from './components/Swatches.vue';
 
-export default {
-  name: 'App',
-  palettes,
-  SHADES,
-  components: {
-    Combination,
-    Combinations,
-    Palette,
-    Swatches,
-  },
-}
+  export default {
+    name: 'App',
+    palettes,
+    SHADES,
+    components: {
+      Combination,
+      Combinations,
+      Palette,
+      Swatches,
+    },
+  };
 </script>
 
 <template>
@@ -73,7 +73,7 @@ export default {
         Palettes
       </h2>
       <Palette
-        v-for="(palette, name) in $options.palettes" 
+        v-for="(palette, name) in $options.palettes"
         v-bind:key="name"
         v-bind:name="name"
         v-bind:palette="palette"

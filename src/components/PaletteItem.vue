@@ -1,41 +1,41 @@
 <script>
-import Color from 'color'
-import Contrast from './Contrast.vue'
-import Sample from './Sample.vue'
-import Swatch from './Swatch.vue'
-import { SHADES } from '../../constants/constants'
+  import Color from 'color';
+  import Contrast from './Contrast.vue';
+  import Sample from './Sample.vue';
+  import Swatch from './Swatch.vue';
+  import { SHADES } from '../../constants/constants';
 
-export default {
-  name: 'PaletteItem',
-  SHADES,
-  components: {
-    Contrast,
-    Sample,
-    Swatch,
-  },
-  props: {
-    scale: {
-      type: String,
-      required: true,
+  export default {
+    name: 'PaletteItem',
+    SHADES,
+    components: {
+      Contrast,
+      Sample,
+      Swatch,
     },
-    paletteName: {
-      type: String,
-      required: true,
+    props: {
+      paletteName: {
+        type: String,
+        required: true,
+      },
+      scale: {
+        type: String,
+        required: true,
+      },
+      value: {
+        type: String,
+        required: true,
+      },
     },
-    value: {
-      type: String,
-      required: true,
+    computed: {
+      color() {
+        return Color(this.value);
+      },
+      name() {
+        return `${this.paletteName}-${this.scale}`;
+      },
     },
-  },
-  computed: {
-    color() {
-      return Color(this.value);
-    },
-    name() {
-      return `${this.paletteName}-${this.scale}`;
-    },
-  },
-}
+  };
 </script>
 
 <template>
