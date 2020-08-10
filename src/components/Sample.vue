@@ -1,22 +1,22 @@
 <script>
-  export default {
-    name: 'Sample',
-    props: {
-      background: {
-        type: String,
-        required: true,
-      },
-      color: {
-        type: String,
-        required: true,
-      },
+export default {
+  name: 'Sample',
+  props: {
+    background: {
+      type: String,
+      required: true,
     },
-    computed: {
-      style() {
-        return `background: ${this.background}; color: ${this.color}`;
-      },
+    color: {
+      type: String,
+      required: true,
     },
-  };
+  },
+  computed: {
+    style() {
+      return `background: ${this.background}; color: ${this.color}`;
+    },
+  },
+}
 </script>
 
 <template>

@@ -1,27 +1,27 @@
 <script>
-  import PaletteItem from './PaletteItem.vue';
+import PaletteItem from './PaletteItem.vue'
 
-  export default {
-    name: 'Palette',
-    components: {
-      PaletteItem,
+export default {
+  name: 'Palette',
+  components: {
+    PaletteItem,
+  },
+  props: {
+    name: {
+      type: String,
+      required: true,
     },
-    props: {
-      name: {
-        type: String,
-        required: true,
-      },
-      palette: {
-        type: Object,
-        required: true,
-      },
+    palette: {
+      type: Object,
+      required: true,
     },
-    computed: {
-      headingId() {
-        return `section-${this.name.toLowerCase()}`;
-      },
+  },
+  computed: {
+    headingId() {
+      return `section-${this.name.toLowerCase()}`;
     },
-  };
+  },
+}
 </script>
 
 <template>

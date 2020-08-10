@@ -1,31 +1,31 @@
 <script>
 
-  export default {
-    name: 'Box',
-    props: {
-      background: {
-        type: String,
-        required: true,
-      },
-      border: {
-        type: String,
-        required: true,
-      },
-      color: {
-        type: String,
-        required: true,
-      },
+export default {
+  name: 'Box',
+  props: {
+    background: {
+      type: String,
+      required: true,
     },
-    computed: {
-      style() {
-        return `
+    border: {
+      type: String,
+      required: true,
+    },
+    color: {
+      type: String,
+      required: true,
+    },
+  },
+  computed: {
+    style() {
+      return `
         background-color:${this.background};
         border-color:${this.border};
         color:${this.color};
       `;
-      },
     },
-  };
+  },
+}
 </script>
 
 <template>

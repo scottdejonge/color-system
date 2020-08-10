@@ -1,26 +1,26 @@
 <script>
 
-  export default {
-    name: 'Combination',
-    props: {
-      first: {
-        type: String,
-        required: true,
-      },
-      second: {
-        type: String,
-        required: true,
-      },
-      size: {
-        type: Number,
-        default: 128,
-      },
-      third: {
-        type: String,
-        required: true,
-      },
+export default {
+  name: 'Combination',
+  props: {
+    first: {
+      type: String,
+      required: true,
     },
-  };
+    second: {
+      type: String,
+      required: true,
+    },
+    third: {
+      type: String,
+      required: true,
+    },
+    size: {
+      type: Number,
+      default: 128,
+    },
+  },
+}
 </script>
 
 <template>
