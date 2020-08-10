@@ -17,8 +17,8 @@
     },
     data() {
       return {
-        store,
         editingColor: null,
+        store,
       };
     },
     methods: {
@@ -26,7 +26,10 @@
         this.editingColor = color;
       },
       updateStore(key, updates) {
-        this.store[key] = { ...store[key], ...updates };
+        this.store[key] = {
+          ...store[key],
+          ...updates,
+        };
       },
       updatePalette(key, updates) {
         this.store.palette[key] = {

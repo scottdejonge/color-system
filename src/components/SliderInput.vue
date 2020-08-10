@@ -8,6 +8,7 @@
         required: true,
       },
       initialValue: {
+        default: 0,
         type: Number,
         required: false,
       },
@@ -24,6 +25,7 @@
         required: true,
       },
       value: {
+        default: '',
         type: String,
         required: false,
       },
@@ -53,9 +55,9 @@
       {{ label }}
     </label>
     <input
+      v-bind:id="id"
       step="1"
       type="range"
-      v-bind:id="id"
       v-bind:max="max"
       v-bind:min="min"
       v-bind:value="value"

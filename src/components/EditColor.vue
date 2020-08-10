@@ -1,5 +1,5 @@
 <script>
-  import { store, getScale, getShades } from '../../utils/store';
+  import { store, getColorScale, getColorShades } from '../../utils/store';
   import Combination from './Combination.vue';
   import SliderInput from './SliderInput.vue';
   import Swatch from './Swatch.vue';
@@ -34,9 +34,11 @@
           ...store.palette[this.colorName],
           ...this.color,
         };
-      console.log({ color }); // eslint-disable-line
 
-        return getScale({
+        // eslint-disable-next-line no-console
+        console.log({ color });
+
+        return getColorScale({
           lightSteps: store.lightSteps,
           darkSteps: store.darkSteps,
           palette: color,
@@ -48,12 +50,12 @@
           ...store.palette[this.colorName],
           ...this.color,
         };
-        const scale = getScale({
+        const scale = getColorScale({
           lightSteps: store.lightSteps,
           darkSteps: store.darkSteps,
           palette: color,
         });
-        return getShades({
+        return getColorShades({
           lightSteps: store.lightSteps,
           darkSteps: store.darkSteps,
           scale,
@@ -62,7 +64,8 @@
     },
     methods: {
       updateColor() {
-        console.log(this.colorName, this.color.darkness, { ...this.color }); // eslint-disable-line
+        // eslint-disable-next-line no-console
+        console.log(this.colorName, this.color.darkness, { ...this.color });
         this.$props.onUpdate(this.colorName, this.color);
       },
     },
