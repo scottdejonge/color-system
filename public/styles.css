@@ -167,3 +167,20 @@ section {
   -webkit-text-stroke: unset;
   z-index: 1;
 }
+
+.edit-sampler {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.edit-sampler--combination {
+  flex-basis: 0;
+}
+
+.edit-scale {
+  display: flex;
+}
+
+.edit-inputs {
+  display: flex;
+}

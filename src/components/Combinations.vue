@@ -15,6 +15,10 @@ export default {
       type: Object,
       required: true,
     },
+    editColor: {
+      type: Function,
+      required: true,
+    },
   },
 };
 </script>
@@ -23,7 +27,7 @@ export default {
   <ul class="combinations">
     <li v-for="(scale, name) in scales" v-bind:key="name">
       <h3>{{ name.toLowerCase() }}</h3>
-      <button class="edit-color">
+      <button class="edit-color" @click="editColor(name)">
         <Combination
           v-bind:first="scale.light"
           v-bind:second="scale.default"

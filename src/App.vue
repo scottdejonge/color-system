@@ -1,20 +1,41 @@
 <script>
-import { store } from "../utils/color-functions";
+import { store } from "../utils/store";
 import Combination from "./components/Combination.vue";
 import Combinations from "./components/Combinations.vue";
 import Scale from "./components/Scale.vue";
 import Swatches from "./components/Swatches.vue";
-
-store._update(); // Initialise Store
+import EditColor from "./components/EditColor.vue";
 
 export default {
   name: "App",
-  store,
   components: {
     Combination,
     Combinations,
     Scale,
     Swatches,
+    EditColor,
+  },
+  data() {
+    return {
+      store,
+      editingColor: null,
+    };
+  },
+  methods: {
+    editColor(color) {
+      this.editingColor = color;
+    },
+    updateStore(key, updates) {
+      this.store[key] = Object.assign({}, store[key], updates);
+    },
+    updatePalette(key, updates) {
+      this.store.palette[key] = Object.assign(
+        {},
+        this.store.palette[key],
+        updates
+      );
+      this.editingColor = undefined;
+    },
   },
 };
 </script>
@@ -27,25 +48,30 @@ export default {
       <ul class="combinations">
         <li>
           <Combination
-            v-bind:first="$options.store.shades.cyan.default"
-            v-bind:second="$options.store.shades.blue.dark"
-            v-bind:third="$options.store.shades.yellow.default"
+            v-bind:first="store.shades.cyan.default"
+            v-bind:second="store.shades.blue.dark"
+            v-bind:third="store.shades.yellow.default"
           />
         </li>
       </ul>
     </section>
     <section aria-labelledby="base-colors">
       <h2 id="base-colors">Base Colors</h2>
-      <Combinations v-bind:scales="$options.store.shades" />
+      <EditColor
+        v-if="editingColor"
+        v-bind:onUpdate="updatePalette"
+        v-bind:colorName="editingColor"
+      />
+      <Combinations v-bind:scales="store.shades" v-bind:editColor="editColor" />
     </section>
     <section aria-labelledby="swatches">
       <h2 id="swatches">Swatches</h2>
-      <Swatches v-bind:scales="$options.store.scales" />
+      <Swatches v-bind:scales="store.scales" />
     </section>
     <section aria-labelledby="scales">
       <h2 id="scales">Scales</h2>
       <Scale
-        v-for="(scale, name) in $options.store.scales"
+        v-for="(scale, name) in store.scales"
         v-bind:key="name"
         v-bind:name="name"
         v-bind:scale="scale"

@@ -3,7 +3,7 @@ import Color from "color";
 import Contrast from "./Contrast.vue";
 import Sample from "./Sample.vue";
 import Swatch from "./Swatch.vue";
-import { store } from "../../utils/color-functions";
+import { store } from "../../utils/store";
 
 export default {
   name: "ScaleItem",

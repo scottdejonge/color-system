@@ -1,6 +1,6 @@
 <script>
 import Color from "color";
-import { store } from "../../utils/color-functions";
+import { store } from "../../utils/store";
 import { WCAG_CONTRAST_RATIO } from "../../utils/constants";
 
 export default {

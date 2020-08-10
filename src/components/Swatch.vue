@@ -1,5 +1,5 @@
 <script>
-import { store } from "../../utils/color-functions";
+import { store } from "../../utils/store";
 
 export default {
   name: "Swatch",
