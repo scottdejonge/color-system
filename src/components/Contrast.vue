@@ -2,7 +2,7 @@
 import Color from 'color'
 import {
   SHADES,
-  WCAG_CONTRAST_RATIO,
+  RATIO,
 } from '../../constants/constants'
 
 export default {
@@ -23,14 +23,10 @@ export default {
   },
   computed: {
     background() {
-      return this.contrast >= WCAG_CONTRAST_RATIO.AA
-      ? SHADES.green.light
-      : SHADES.red.light;
+      return this.contrast >= RATIO.AAA ? SHADES.green.light : SHADES.red.light;
     },
     color() {
-      return this.contrast >= WCAG_CONTRAST_RATIO.AA
-      ? SHADES.green.dark
-      : SHADES.red.dark;
+      return this.contrast >= RATIO.AAA ? SHADES.green.dark : SHADES.red.dark;
     },
     contrast() {
       const ratio = Color(this.value).contrast(Color(this.versus));
