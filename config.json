@@ -11,21 +11,6 @@
         }
       ]
     },
-    "scss": {
-      "transformGroup": "scss",
-      "buildPath": "build/scss/",
-      "files": [
-        {
-          "destination": "_variables.scss",
-          "format": "scss/variables"
-        },
-        {
-          "destination": "_variables.map.scss",
-          "format": "scss/map-deep",
-          "mapName": "colors"
-        }
-      ]
-    },
     "js": {
       "transformGroup": "js",
       "buildPath": "build/js/",
@@ -55,6 +40,21 @@
         {
           "destination": "variables.flat.json",
           "format": "json/flat"
+        }
+      ]
+    },
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "build/scss/",
+      "files": [
+        {
+          "destination": "_variables.scss",
+          "format": "scss/variables"
+        },
+        {
+          "destination": "_variables.map.scss",
+          "format": "scss/map-deep",
+          "mapName": "colors"
         }
       ]
     }
