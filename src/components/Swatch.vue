@@ -1,5 +1,5 @@
 <script>
-import { SHADES } from '../../constants/constants'
+import { BASE } from '../../constants/constants'
 
 export default {
   name: 'Swatch',
@@ -19,9 +19,7 @@ export default {
   },
   computed: {
     textColor() {
-      return Number(this.scale) >= 50
-      ? SHADES.neutral.light
-      : SHADES.neutral.dark;
+      return Number(this.scale) >= 50 ? BASE.light : BASE.dark;
     },
     name() {
       return `${this.paletteName}-${this.scale}`;

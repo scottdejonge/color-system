@@ -1,5 +1,10 @@
 import palettes from './palettes.json'
 
+export const BASE = {
+  light: palettes.neutral['0'].value,
+  dark: palettes.neutral['100'].value,
+};
+
 export const SHADES = {
   neutral: {
     light: palettes.neutral['10'].value,
