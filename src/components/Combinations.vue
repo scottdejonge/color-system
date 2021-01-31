@@ -37,7 +37,6 @@ export default {
         v-bind:border="palette.default"
         v-bind:color="palette.dark"
       >
-        Contrast
         <Contrast
           v-bind:styled="false"
           v-bind:value="palette.light"
@@ -50,7 +49,6 @@ export default {
         v-bind:border="palette.default"
         v-bind:color="palette.light"
       >
-        Contrast
         <Contrast
           v-bind:styled="false"
           v-bind:value="palette.light"
