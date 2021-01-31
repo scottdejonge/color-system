@@ -41,6 +41,11 @@ export const SHADES = {
     default: palettes.magenta['50'].value,
     dark: palettes.magenta['80'].value,
   },
+  purple: {
+    light: palettes.purple['10'].value,
+    default: palettes.purple['50'].value,
+    dark: palettes.purple['80'].value,
+  },
 };
 
 export const RATIO = {
