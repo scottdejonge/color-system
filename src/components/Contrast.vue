@@ -23,10 +23,22 @@ export default {
   },
   computed: {
     background() {
-      return this.contrast >= RATIO.AAA ? SHADES.green.light : SHADES.red.light;
+      if (this.contrast >= RATIO.AAA) {
+        return SHADES.green.light;
+      } else if (this.contrast >= RATIO.AA) {
+        return SHADES.yellow.light;
+      } else {
+        return SHADES.red.light;
+      }
     },
     color() {
-      return this.contrast >= RATIO.AAA ? SHADES.green.dark : SHADES.red.dark;
+      if (this.contrast >= RATIO.AAA) {
+        return SHADES.green.dark;
+      } else if (this.contrast >= RATIO.AA) {
+        return SHADES.yellow.dark;
+      } else {
+        return SHADES.red.dark;
+      }
     },
     contrast() {
       const ratio = Color(this.value).contrast(Color(this.versus));
