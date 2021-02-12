@@ -1,7 +1,6 @@
 <script>
 import palettes from '../constants/palettes.json'
 import { SHADES } from '../constants/constants'
-import Combination from './components/Combination.vue'
 import Combinations from './components/Combinations.vue'
 import Palette from './components/Palette.vue'
 import Swatches from './components/Swatches.vue'
@@ -11,7 +10,6 @@ export default {
   palettes,
   SHADES,
   components: {
-    Combination,
     Combinations,
     Palette,
     Swatches,
@@ -22,24 +20,6 @@ export default {
 <template>
   <main>
     <h1>Color System</h1>
-    <section
-      aria-labelledby="combinations"
-    >
-      <h2
-        id="combinations"
-      >
-        Combinations
-      </h2>
-      <ul class="combinations">
-        <li>
-          <Combination
-            v-bind:first="$options.SHADES.cyan.default"
-            v-bind:second="$options.SHADES.blue.dark"
-            v-bind:third="$options.SHADES.yellow.default"
-          />
-        </li>
-      </ul>
-    </section>
     <section
       aria-labelledby="base-colors"
     >
