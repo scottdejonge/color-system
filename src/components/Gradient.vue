@@ -1,4 +1,5 @@
 <script>
+import { slugify } from '../utils/slugify'
 
 export default {
   name: 'Gradient',
@@ -18,7 +19,7 @@ export default {
   },
   computed: {
     id() {
-      return `${this.first.replace(/[^\w\s]|_/g, "").replace(/\s+/g, '-')}-${this.second.replace(/[^\w\s]|_/g, "").replace(/\s+/g, '-')}`;
+      return `${slugify(this.first)}-${slugify(this.second)}`;
     },
   },
 }
