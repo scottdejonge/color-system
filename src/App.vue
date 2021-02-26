@@ -2,6 +2,7 @@
 import palettes from '../constants/palettes.json'
 import { SHADES } from '../constants/constants'
 import Combinations from './components/Combinations.vue'
+import Compliments from './components/Compliments.vue'
 import Palette from './components/Palette.vue'
 import Swatches from './components/Swatches.vue'
 
@@ -11,6 +12,7 @@ export default {
   SHADES,
   components: {
     Combinations,
+    Compliments,
     Palette,
     Swatches,
   },
@@ -57,6 +59,18 @@ export default {
         v-bind:key="name"
         v-bind:name="name"
         v-bind:palette="palette"
+      />
+    </section>
+    <section
+      aria-labelledby="compliments"
+    >
+      <h2
+        id="compliments"
+      >
+        Compliments
+      </h2>
+      <Compliments
+        v-bind:palettes="$options.palettes"
       />
     </section>
   </main>

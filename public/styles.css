@@ -70,6 +70,11 @@ section {
   margin-top: 4rem;
 }
 
+/**
+ * Box
+ */
+
+
 .box {
   border-left-width: 0.75rem;
   border-left-style: solid;
@@ -78,6 +83,11 @@ section {
   font-size: 0.875rem;
   font-weight: 500;
 }
+
+/**
+ * Combination
+ */
+
 
 .combinations {
   display: flex;
@@ -97,6 +107,25 @@ section {
   margin: auto;
 }
 
+/**
+ * Compliment
+ */
+
+.compliments {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.75rem;
+}
+
+.compliments  > li {
+  flex-basis: 1px;
+  padding: 0.75rem;
+}
+
+/**
+ * Swatch
+ */
+
 .swatches {
   display: flex;
 }
@@ -115,6 +144,10 @@ section {
 .swatch code {
   font-weight: 500;
 }
+
+/**
+ * Contrast
+ */
 
 .contrast,
 .sample {
