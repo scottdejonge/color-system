@@ -5,6 +5,7 @@ import Combinations from './components/Combinations.vue'
 import Compliments from './components/Compliments.vue'
 import Gradients from './components/Gradients.vue'
 import Palette from './components/Palette.vue'
+import Section from './components/Section.vue'
 import Swatches from './components/Swatches.vue'
 
 export default {
@@ -16,6 +17,7 @@ export default {
     Compliments,
     Gradients,
     Palette,
+    Section,
     Swatches,
   },
   computed: {
@@ -32,68 +34,43 @@ export default {
 <template>
   <main>
     <h1>Color System</h1>
-    <section
-      aria-labelledby="base-colors"
+    <Section
+      title="Base Colors"
     >
-      <h2
-        id="base-colors"
-      >
-        Base Colors
-      </h2>
       <Combinations
         v-bind:palettes="$options.SHADES"
       />
-    </section>
-    <section
-      aria-labelledby="swatches"
+    </Section>
+    <Section
+      title="Swatches"
     >
-      <h2
-        id="swatches"
-      >
-        Swatches
-      </h2>
       <Swatches
         v-bind:palettes="$options.palettes"
       />
-    </section>
-    <section
-      aria-labelledby="palettes"
+    </Section>
+    <Section
+      title="Palettes"
     >
-      <h2
-        id="palettes"
-      >
-        Palettes
-      </h2>
       <Palette
         v-for="(palette, name) in $options.palettes" 
         v-bind:key="name"
         v-bind:name="name"
         v-bind:palette="palette"
       />
-    </section>
-    <section
-      aria-labelledby="compliments"
+    </Section>
+    <Section
+      title="Compliments"
     >
-      <h2
-        id="compliments"
-      >
-        Compliments
-      </h2>
       <Compliments
         v-bind:palettes="reducedPalettes"
       />
-    </section>
-    <section
-      aria-labelledby="gradients"
+    </Section>
+    <Section
+      title="Gradients"
     >
-      <h2
-        id="gradients"
-      >
-        Gradients
-      </h2>
       <Gradients
         v-bind:palettes="reducedPalettes"
       />
-    </section>
+    </Section>
   </main>
 </template>
