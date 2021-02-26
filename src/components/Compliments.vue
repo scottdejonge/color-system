@@ -12,26 +12,18 @@ export default {
       required: true,
     },
   },
-  computed: {
-    reducesPalettes() {
-      return Object.keys(this.palettes).reduce((acc, color)=>{
-        acc[color] = this.palettes[color]['50']['value']
-        return acc;
-      },{});
-    },
-  },
 }
 </script>
 
 <template>
   <ul class="compliments">
     <li
-      v-for="first in reducesPalettes" 
+      v-for="first in palettes" 
       v-bind:key="first"
     >
       <ul class="compliments">
         <li
-          v-for="second in reducesPalettes" 
+          v-for="second in palettes" 
           v-bind:key="second"
         >
           <Compliment

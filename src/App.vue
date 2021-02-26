@@ -18,6 +18,14 @@ export default {
     Palette,
     Swatches,
   },
+  computed: {
+    reducedPalettes() {
+      return Object.keys(palettes).reduce((acc, color)=>{
+        acc[color] = palettes[color]['50']['value']
+        return acc;
+      },{});
+    },
+  },
 }
 </script>
 
@@ -72,7 +80,7 @@ export default {
         Compliments
       </h2>
       <Compliments
-        v-bind:palettes="$options.palettes"
+        v-bind:palettes="reducedPalettes"
       />
     </section>
     <section
@@ -84,7 +92,7 @@ export default {
         Gradients
       </h2>
       <Gradients
-        v-bind:palettes="$options.palettes"
+        v-bind:palettes="reducedPalettes"
       />
     </section>
   </main>
