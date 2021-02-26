@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 26 Feb 2021 05:16:49 GMT
+ * Generated on Fri, 26 Feb 2021 05:17:06 GMT
  */
 
 export const Magenta10 = "hsl(300, 80%, 98%)";

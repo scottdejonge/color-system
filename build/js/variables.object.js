@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 26 Feb 2021 05:16:49 GMT
+ * Generated on Fri, 26 Feb 2021 05:17:06 GMT
  */
 
 var _styleDictionary = {
