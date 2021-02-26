@@ -1,279 +1,142 @@
 /**
  * Do not edit directly
- * Generated on Fri, 26 Feb 2021 05:01:12 GMT
+ * Generated on Fri, 26 Feb 2021 05:16:49 GMT
  */
 
 var _styleDictionary = {
-  "cyan": {
+  "magenta": {
     "10": {
-      "value": "hsl(190, 80%, 97.5%)",
+      "value": "hsl(300, 80%, 98%)",
       "original": {
-        "value": "hsl(190, 80%, 97.5%)"
+        "value": "hsl(300, 80%, 98%)"
       },
-      "name": "Cyan10",
+      "name": "Magenta10",
       "attributes": {
-        "category": "cyan",
+        "category": "magenta",
         "type": "10"
       },
       "path": [
-        "cyan",
+        "magenta",
         "10"
       ]
     },
     "20": {
-      "value": "hsl(190, 80%, 90%)",
+      "value": "hsl(300, 80%, 92.5%)",
       "original": {
-        "value": "hsl(190, 80%, 90%)"
+        "value": "hsl(300, 80%, 92.5%)"
       },
-      "name": "Cyan20",
+      "name": "Magenta20",
       "attributes": {
-        "category": "cyan",
+        "category": "magenta",
         "type": "20"
       },
       "path": [
-        "cyan",
+        "magenta",
         "20"
       ]
     },
     "30": {
-      "value": "hsl(190, 80%, 85%)",
+      "value": "hsl(300, 80%, 90%)",
       "original": {
-        "value": "hsl(190, 80%, 85%)"
+        "value": "hsl(300, 80%, 90%)"
       },
-      "name": "Cyan30",
+      "name": "Magenta30",
       "attributes": {
-        "category": "cyan",
+        "category": "magenta",
         "type": "30"
       },
       "path": [
-        "cyan",
+        "magenta",
         "30"
       ]
     },
     "40": {
-      "value": "hsl(190, 80%, 75%)",
+      "value": "hsl(300, 80%, 80%)",
       "original": {
-        "value": "hsl(190, 80%, 75%)"
+        "value": "hsl(300, 80%, 80%)"
       },
-      "name": "Cyan40",
+      "name": "Magenta40",
       "attributes": {
-        "category": "cyan",
+        "category": "magenta",
         "type": "40"
       },
       "path": [
-        "cyan",
+        "magenta",
         "40"
       ]
     },
     "50": {
-      "value": "hsl(190, 90%, 55%)",
+      "value": "hsl(300, 80%, 33%)",
       "original": {
-        "value": "hsl(190, 90%, 55%)"
+        "value": "hsl(300, 80%, 33%)"
       },
-      "name": "Cyan50",
+      "name": "Magenta50",
       "attributes": {
-        "category": "cyan",
+        "category": "magenta",
         "type": "50"
       },
       "path": [
-        "cyan",
+        "magenta",
         "50"
       ]
     },
     "60": {
-      "value": "hsl(198, 90%, 35%)",
+      "value": "hsl(300, 80%, 30%)",
       "original": {
-        "value": "hsl(198, 90%, 35%)"
+        "value": "hsl(300, 80%, 30%)"
       },
-      "name": "Cyan60",
+      "name": "Magenta60",
       "attributes": {
-        "category": "cyan",
+        "category": "magenta",
         "type": "60"
       },
       "path": [
-        "cyan",
+        "magenta",
         "60"
       ]
     },
     "70": {
-      "value": "hsl(200, 90%, 30%)",
+      "value": "hsl(300, 80%, 25%)",
       "original": {
-        "value": "hsl(200, 90%, 30%)"
+        "value": "hsl(300, 80%, 25%)"
       },
-      "name": "Cyan70",
+      "name": "Magenta70",
       "attributes": {
-        "category": "cyan",
+        "category": "magenta",
         "type": "70"
       },
       "path": [
-        "cyan",
+        "magenta",
         "70"
       ]
     },
     "80": {
-      "value": "hsl(203, 95%, 25%)",
+      "value": "hsl(300, 80%, 20%)",
       "original": {
-        "value": "hsl(203, 95%, 25%)"
+        "value": "hsl(300, 80%, 20%)"
       },
-      "name": "Cyan80",
+      "name": "Magenta80",
       "attributes": {
-        "category": "cyan",
+        "category": "magenta",
         "type": "80"
       },
       "path": [
-        "cyan",
+        "magenta",
         "80"
       ]
     },
     "90": {
-      "value": "hsl(206, 100%, 15%)",
+      "value": "hsl(300, 80%, 12.5%)",
       "original": {
-        "value": "hsl(206, 100%, 15%)"
+        "value": "hsl(300, 80%, 12.5%)"
       },
-      "name": "Cyan90",
+      "name": "Magenta90",
       "attributes": {
-        "category": "cyan",
+        "category": "magenta",
         "type": "90"
       },
       "path": [
-        "cyan",
-        "90"
-      ]
-    }
-  },
-  "blue": {
-    "10": {
-      "value": "hsl(210, 80%, 97.5%)",
-      "original": {
-        "value": "hsl(210, 80%, 97.5%)"
-      },
-      "name": "Blue10",
-      "attributes": {
-        "category": "blue",
-        "type": "10"
-      },
-      "path": [
-        "blue",
-        "10"
-      ]
-    },
-    "20": {
-      "value": "hsl(210, 80%, 90%)",
-      "original": {
-        "value": "hsl(210, 80%, 90%)"
-      },
-      "name": "Blue20",
-      "attributes": {
-        "category": "blue",
-        "type": "20"
-      },
-      "path": [
-        "blue",
-        "20"
-      ]
-    },
-    "30": {
-      "value": "hsl(210, 80%, 85%)",
-      "original": {
-        "value": "hsl(210, 80%, 85%)"
-      },
-      "name": "Blue30",
-      "attributes": {
-        "category": "blue",
-        "type": "30"
-      },
-      "path": [
-        "blue",
-        "30"
-      ]
-    },
-    "40": {
-      "value": "hsl(215, 80%, 75%)",
-      "original": {
-        "value": "hsl(215, 80%, 75%)"
-      },
-      "name": "Blue40",
-      "attributes": {
-        "category": "blue",
-        "type": "40"
-      },
-      "path": [
-        "blue",
-        "40"
-      ]
-    },
-    "50": {
-      "value": "hsl(230, 80%, 50%)",
-      "original": {
-        "value": "hsl(230, 80%, 50%)"
-      },
-      "name": "Blue50",
-      "attributes": {
-        "category": "blue",
-        "type": "50"
-      },
-      "path": [
-        "blue",
-        "50"
-      ]
-    },
-    "60": {
-      "value": "hsl(230, 80%, 40%)",
-      "original": {
-        "value": "hsl(230, 80%, 40%)"
-      },
-      "name": "Blue60",
-      "attributes": {
-        "category": "blue",
-        "type": "60"
-      },
-      "path": [
-        "blue",
-        "60"
-      ]
-    },
-    "70": {
-      "value": "hsl(220, 90%, 30%)",
-      "original": {
-        "value": "hsl(220, 90%, 30%)"
-      },
-      "name": "Blue70",
-      "attributes": {
-        "category": "blue",
-        "type": "70"
-      },
-      "path": [
-        "blue",
-        "70"
-      ]
-    },
-    "80": {
-      "value": "hsl(220, 90%, 25%)",
-      "original": {
-        "value": "hsl(220, 90%, 25%)"
-      },
-      "name": "Blue80",
-      "attributes": {
-        "category": "blue",
-        "type": "80"
-      },
-      "path": [
-        "blue",
-        "80"
-      ]
-    },
-    "90": {
-      "value": "hsl(220, 90%, 15%)",
-      "original": {
-        "value": "hsl(220, 90%, 15%)"
-      },
-      "name": "Blue90",
-      "attributes": {
-        "category": "blue",
-        "type": "90"
-      },
-      "path": [
-        "blue",
+        "magenta",
         "90"
       ]
     }
@@ -415,276 +278,413 @@ var _styleDictionary = {
       ]
     }
   },
-  "magenta": {
+  "blue": {
     "10": {
-      "value": "hsl(300, 80%, 98%)",
+      "value": "hsl(210, 80%, 97.5%)",
       "original": {
-        "value": "hsl(300, 80%, 98%)"
+        "value": "hsl(210, 80%, 97.5%)"
       },
-      "name": "Magenta10",
+      "name": "Blue10",
       "attributes": {
-        "category": "magenta",
+        "category": "blue",
         "type": "10"
       },
       "path": [
-        "magenta",
+        "blue",
         "10"
       ]
     },
     "20": {
-      "value": "hsl(300, 80%, 92.5%)",
+      "value": "hsl(210, 80%, 90%)",
       "original": {
-        "value": "hsl(300, 80%, 92.5%)"
+        "value": "hsl(210, 80%, 90%)"
       },
-      "name": "Magenta20",
+      "name": "Blue20",
       "attributes": {
-        "category": "magenta",
+        "category": "blue",
         "type": "20"
       },
       "path": [
-        "magenta",
+        "blue",
         "20"
       ]
     },
     "30": {
-      "value": "hsl(300, 80%, 90%)",
+      "value": "hsl(210, 80%, 85%)",
       "original": {
-        "value": "hsl(300, 80%, 90%)"
+        "value": "hsl(210, 80%, 85%)"
       },
-      "name": "Magenta30",
+      "name": "Blue30",
       "attributes": {
-        "category": "magenta",
+        "category": "blue",
         "type": "30"
       },
       "path": [
-        "magenta",
+        "blue",
         "30"
       ]
     },
     "40": {
-      "value": "hsl(300, 80%, 80%)",
+      "value": "hsl(215, 80%, 75%)",
       "original": {
-        "value": "hsl(300, 80%, 80%)"
+        "value": "hsl(215, 80%, 75%)"
       },
-      "name": "Magenta40",
+      "name": "Blue40",
       "attributes": {
-        "category": "magenta",
+        "category": "blue",
         "type": "40"
       },
       "path": [
-        "magenta",
+        "blue",
         "40"
       ]
     },
     "50": {
-      "value": "hsl(300, 80%, 33%)",
+      "value": "hsl(230, 80%, 50%)",
       "original": {
-        "value": "hsl(300, 80%, 33%)"
+        "value": "hsl(230, 80%, 50%)"
       },
-      "name": "Magenta50",
+      "name": "Blue50",
       "attributes": {
-        "category": "magenta",
+        "category": "blue",
         "type": "50"
       },
       "path": [
-        "magenta",
+        "blue",
         "50"
       ]
     },
     "60": {
-      "value": "hsl(300, 80%, 30%)",
+      "value": "hsl(230, 80%, 40%)",
       "original": {
-        "value": "hsl(300, 80%, 30%)"
+        "value": "hsl(230, 80%, 40%)"
       },
-      "name": "Magenta60",
+      "name": "Blue60",
       "attributes": {
-        "category": "magenta",
+        "category": "blue",
         "type": "60"
       },
       "path": [
-        "magenta",
+        "blue",
         "60"
       ]
     },
     "70": {
-      "value": "hsl(300, 80%, 25%)",
+      "value": "hsl(220, 90%, 30%)",
       "original": {
-        "value": "hsl(300, 80%, 25%)"
+        "value": "hsl(220, 90%, 30%)"
       },
-      "name": "Magenta70",
+      "name": "Blue70",
       "attributes": {
-        "category": "magenta",
+        "category": "blue",
         "type": "70"
       },
       "path": [
-        "magenta",
+        "blue",
         "70"
       ]
     },
     "80": {
-      "value": "hsl(300, 80%, 20%)",
+      "value": "hsl(220, 90%, 25%)",
       "original": {
-        "value": "hsl(300, 80%, 20%)"
+        "value": "hsl(220, 90%, 25%)"
       },
-      "name": "Magenta80",
+      "name": "Blue80",
       "attributes": {
-        "category": "magenta",
+        "category": "blue",
         "type": "80"
       },
       "path": [
-        "magenta",
+        "blue",
         "80"
       ]
     },
     "90": {
-      "value": "hsl(300, 80%, 12.5%)",
+      "value": "hsl(220, 90%, 15%)",
       "original": {
-        "value": "hsl(300, 80%, 12.5%)"
+        "value": "hsl(220, 90%, 15%)"
       },
-      "name": "Magenta90",
+      "name": "Blue90",
       "attributes": {
-        "category": "magenta",
+        "category": "blue",
         "type": "90"
       },
       "path": [
-        "magenta",
+        "blue",
         "90"
       ]
     }
   },
-  "red": {
+  "cyan": {
     "10": {
-      "value": "hsl(345, 100%, 98%)",
+      "value": "hsl(190, 80%, 97.5%)",
       "original": {
-        "value": "hsl(345, 100%, 98%)"
+        "value": "hsl(190, 80%, 97.5%)"
       },
-      "name": "Red10",
+      "name": "Cyan10",
       "attributes": {
-        "category": "red",
+        "category": "cyan",
         "type": "10"
       },
       "path": [
-        "red",
+        "cyan",
         "10"
       ]
     },
     "20": {
-      "value": "hsl(345, 100%, 92.5%)",
+      "value": "hsl(190, 80%, 90%)",
       "original": {
-        "value": "hsl(345, 100%, 92.5%)"
+        "value": "hsl(190, 80%, 90%)"
       },
-      "name": "Red20",
+      "name": "Cyan20",
       "attributes": {
-        "category": "red",
+        "category": "cyan",
         "type": "20"
       },
       "path": [
-        "red",
+        "cyan",
         "20"
       ]
     },
     "30": {
-      "value": "hsl(345, 100%, 90%)",
+      "value": "hsl(190, 80%, 85%)",
       "original": {
-        "value": "hsl(345, 100%, 90%)"
+        "value": "hsl(190, 80%, 85%)"
       },
-      "name": "Red30",
+      "name": "Cyan30",
       "attributes": {
-        "category": "red",
+        "category": "cyan",
         "type": "30"
       },
       "path": [
-        "red",
+        "cyan",
         "30"
       ]
     },
     "40": {
-      "value": "hsl(345, 100%, 80%)",
+      "value": "hsl(190, 80%, 75%)",
       "original": {
-        "value": "hsl(345, 100%, 80%)"
+        "value": "hsl(190, 80%, 75%)"
       },
-      "name": "Red40",
+      "name": "Cyan40",
       "attributes": {
-        "category": "red",
+        "category": "cyan",
         "type": "40"
       },
       "path": [
-        "red",
+        "cyan",
         "40"
       ]
     },
     "50": {
-      "value": "hsl(345, 100%, 35%)",
+      "value": "hsl(190, 90%, 55%)",
       "original": {
-        "value": "hsl(345, 100%, 35%)"
+        "value": "hsl(190, 90%, 55%)"
       },
-      "name": "Red50",
+      "name": "Cyan50",
       "attributes": {
-        "category": "red",
+        "category": "cyan",
         "type": "50"
       },
       "path": [
-        "red",
+        "cyan",
         "50"
       ]
     },
     "60": {
-      "value": "hsl(345, 100%, 30%)",
+      "value": "hsl(198, 90%, 35%)",
       "original": {
-        "value": "hsl(345, 100%, 30%)"
+        "value": "hsl(198, 90%, 35%)"
       },
-      "name": "Red60",
+      "name": "Cyan60",
       "attributes": {
-        "category": "red",
+        "category": "cyan",
         "type": "60"
       },
       "path": [
-        "red",
+        "cyan",
         "60"
       ]
     },
     "70": {
-      "value": "hsl(345, 100%, 25%)",
+      "value": "hsl(200, 90%, 30%)",
       "original": {
-        "value": "hsl(345, 100%, 25%)"
+        "value": "hsl(200, 90%, 30%)"
       },
-      "name": "Red70",
+      "name": "Cyan70",
       "attributes": {
-        "category": "red",
+        "category": "cyan",
         "type": "70"
       },
       "path": [
-        "red",
+        "cyan",
         "70"
       ]
     },
     "80": {
-      "value": "hsl(342.5, 100%, 20%)",
+      "value": "hsl(203, 95%, 25%)",
       "original": {
-        "value": "hsl(342.5, 100%, 20%)"
+        "value": "hsl(203, 95%, 25%)"
       },
-      "name": "Red80",
+      "name": "Cyan80",
       "attributes": {
-        "category": "red",
+        "category": "cyan",
         "type": "80"
       },
       "path": [
-        "red",
+        "cyan",
         "80"
       ]
     },
     "90": {
-      "value": "hsl(340, 100%, 15%)",
+      "value": "hsl(206, 100%, 15%)",
       "original": {
-        "value": "hsl(340, 100%, 15%)"
+        "value": "hsl(206, 100%, 15%)"
       },
-      "name": "Red90",
+      "name": "Cyan90",
       "attributes": {
-        "category": "red",
+        "category": "cyan",
         "type": "90"
       },
       "path": [
-        "red",
+        "cyan",
+        "90"
+      ]
+    }
+  },
+  "green": {
+    "10": {
+      "value": "hsl(135, 85%, 98%)",
+      "original": {
+        "value": "hsl(135, 85%, 98%)"
+      },
+      "name": "Green10",
+      "attributes": {
+        "category": "green",
+        "type": "10"
+      },
+      "path": [
+        "green",
+        "10"
+      ]
+    },
+    "20": {
+      "value": "hsl(135, 80%, 92.5%)",
+      "original": {
+        "value": "hsl(135, 80%, 92.5%)"
+      },
+      "name": "Green20",
+      "attributes": {
+        "category": "green",
+        "type": "20"
+      },
+      "path": [
+        "green",
+        "20"
+      ]
+    },
+    "30": {
+      "value": "hsl(135, 75%, 90%)",
+      "original": {
+        "value": "hsl(135, 75%, 90%)"
+      },
+      "name": "Green30",
+      "attributes": {
+        "category": "green",
+        "type": "30"
+      },
+      "path": [
+        "green",
+        "30"
+      ]
+    },
+    "40": {
+      "value": "hsl(135, 65%, 80%)",
+      "original": {
+        "value": "hsl(135, 65%, 80%)"
+      },
+      "name": "Green40",
+      "attributes": {
+        "category": "green",
+        "type": "40"
+      },
+      "path": [
+        "green",
+        "40"
+      ]
+    },
+    "50": {
+      "value": "hsl(160, 100%, 20%)",
+      "original": {
+        "value": "hsl(160, 100%, 20%)"
+      },
+      "name": "Green50",
+      "attributes": {
+        "category": "green",
+        "type": "50"
+      },
+      "path": [
+        "green",
+        "50"
+      ]
+    },
+    "60": {
+      "value": "hsl(160, 80%, 17.5%)",
+      "original": {
+        "value": "hsl(160, 80%, 17.5%)"
+      },
+      "name": "Green60",
+      "attributes": {
+        "category": "green",
+        "type": "60"
+      },
+      "path": [
+        "green",
+        "60"
+      ]
+    },
+    "70": {
+      "value": "hsl(165, 80%, 15%)",
+      "original": {
+        "value": "hsl(165, 80%, 15%)"
+      },
+      "name": "Green70",
+      "attributes": {
+        "category": "green",
+        "type": "70"
+      },
+      "path": [
+        "green",
+        "70"
+      ]
+    },
+    "80": {
+      "value": "hsl(165, 80%, 12.5%)",
+      "original": {
+        "value": "hsl(165, 80%, 12.5%)"
+      },
+      "name": "Green80",
+      "attributes": {
+        "category": "green",
+        "type": "80"
+      },
+      "path": [
+        "green",
+        "80"
+      ]
+    },
+    "90": {
+      "value": "hsl(165, 80%, 10%)",
+      "original": {
+        "value": "hsl(165, 80%, 10%)"
+      },
+      "name": "Green90",
+      "attributes": {
+        "category": "green",
+        "type": "90"
+      },
+      "path": [
+        "green",
         "90"
       ]
     }
@@ -826,139 +826,139 @@ var _styleDictionary = {
       ]
     }
   },
-  "green": {
+  "red": {
     "10": {
-      "value": "hsl(135, 85%, 98%)",
+      "value": "hsl(345, 100%, 98%)",
       "original": {
-        "value": "hsl(135, 85%, 98%)"
+        "value": "hsl(345, 100%, 98%)"
       },
-      "name": "Green10",
+      "name": "Red10",
       "attributes": {
-        "category": "green",
+        "category": "red",
         "type": "10"
       },
       "path": [
-        "green",
+        "red",
         "10"
       ]
     },
     "20": {
-      "value": "hsl(135, 80%, 92.5%)",
+      "value": "hsl(345, 100%, 92.5%)",
       "original": {
-        "value": "hsl(135, 80%, 92.5%)"
+        "value": "hsl(345, 100%, 92.5%)"
       },
-      "name": "Green20",
+      "name": "Red20",
       "attributes": {
-        "category": "green",
+        "category": "red",
         "type": "20"
       },
       "path": [
-        "green",
+        "red",
         "20"
       ]
     },
     "30": {
-      "value": "hsl(135, 75%, 90%)",
+      "value": "hsl(345, 100%, 90%)",
       "original": {
-        "value": "hsl(135, 75%, 90%)"
+        "value": "hsl(345, 100%, 90%)"
       },
-      "name": "Green30",
+      "name": "Red30",
       "attributes": {
-        "category": "green",
+        "category": "red",
         "type": "30"
       },
       "path": [
-        "green",
+        "red",
         "30"
       ]
     },
     "40": {
-      "value": "hsl(135, 65%, 80%)",
+      "value": "hsl(345, 100%, 80%)",
       "original": {
-        "value": "hsl(135, 65%, 80%)"
+        "value": "hsl(345, 100%, 80%)"
       },
-      "name": "Green40",
+      "name": "Red40",
       "attributes": {
-        "category": "green",
+        "category": "red",
         "type": "40"
       },
       "path": [
-        "green",
+        "red",
         "40"
       ]
     },
     "50": {
-      "value": "hsl(160, 100%, 20%)",
+      "value": "hsl(345, 100%, 35%)",
       "original": {
-        "value": "hsl(160, 100%, 20%)"
+        "value": "hsl(345, 100%, 35%)"
       },
-      "name": "Green50",
+      "name": "Red50",
       "attributes": {
-        "category": "green",
+        "category": "red",
         "type": "50"
       },
       "path": [
-        "green",
+        "red",
         "50"
       ]
     },
     "60": {
-      "value": "hsl(160, 80%, 17.5%)",
+      "value": "hsl(345, 100%, 30%)",
       "original": {
-        "value": "hsl(160, 80%, 17.5%)"
+        "value": "hsl(345, 100%, 30%)"
       },
-      "name": "Green60",
+      "name": "Red60",
       "attributes": {
-        "category": "green",
+        "category": "red",
         "type": "60"
       },
       "path": [
-        "green",
+        "red",
         "60"
       ]
     },
     "70": {
-      "value": "hsl(165, 80%, 15%)",
+      "value": "hsl(345, 100%, 25%)",
       "original": {
-        "value": "hsl(165, 80%, 15%)"
+        "value": "hsl(345, 100%, 25%)"
       },
-      "name": "Green70",
+      "name": "Red70",
       "attributes": {
-        "category": "green",
+        "category": "red",
         "type": "70"
       },
       "path": [
-        "green",
+        "red",
         "70"
       ]
     },
     "80": {
-      "value": "hsl(165, 80%, 12.5%)",
+      "value": "hsl(342.5, 100%, 20%)",
       "original": {
-        "value": "hsl(165, 80%, 12.5%)"
+        "value": "hsl(342.5, 100%, 20%)"
       },
-      "name": "Green80",
+      "name": "Red80",
       "attributes": {
-        "category": "green",
+        "category": "red",
         "type": "80"
       },
       "path": [
-        "green",
+        "red",
         "80"
       ]
     },
     "90": {
-      "value": "hsl(165, 80%, 10%)",
+      "value": "hsl(340, 100%, 15%)",
       "original": {
-        "value": "hsl(165, 80%, 10%)"
+        "value": "hsl(340, 100%, 15%)"
       },
-      "name": "Green90",
+      "name": "Red90",
       "attributes": {
-        "category": "green",
+        "category": "red",
         "type": "90"
       },
       "path": [
-        "green",
+        "red",
         "90"
       ]
     }
