@@ -1,10 +1,10 @@
 <script>
-import Compliment from './Compliment.vue'
+import Gradient from './Gradient.vue'
 
 export default {
-  name: 'Compliments',
+  name: 'Gradients',
   components: {
-    Compliment,
+    Gradient,
   },
   props: {
     palettes: {
@@ -24,17 +24,17 @@ export default {
 </script>
 
 <template>
-  <ul class="compliments">
+  <ul class="gradients">
     <li
       v-for="first in reducesPalettes" 
       v-bind:key="first"
     >
-      <ul class="compliments">
+      <ul class="gradients">
         <li
           v-for="second in reducesPalettes" 
           v-bind:key="second"
         >
-          <Compliment
+          <Gradient
             v-bind:first="first"
             v-bind:second="second"
           />

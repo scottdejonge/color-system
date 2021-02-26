@@ -117,9 +117,18 @@ section {
   margin: -0.75rem;
 }
 
-.compliments  > li {
+.compliments > li {
   flex-basis: 1px;
   padding: 0.75rem;
+}
+
+/**
+ * Gradient
+ */
+
+.gradients > li {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 /**
