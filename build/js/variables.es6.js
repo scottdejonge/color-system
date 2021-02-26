@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 26 Feb 2021 05:17:06 GMT
+ * Generated on Fri, 26 Feb 2021 06:01:31 GMT
  */
 
 export const Magenta10 = "hsl(300, 80%, 98%)";
@@ -48,15 +48,15 @@ export const Green60 = "hsl(160, 80%, 17.5%)";
 export const Green70 = "hsl(165, 80%, 15%)";
 export const Green80 = "hsl(165, 80%, 12.5%)";
 export const Green90 = "hsl(165, 80%, 10%)";
-export const Yellow10 = "hsl(50, 100%, 98%)";
-export const Yellow20 = "hsl(50, 100%, 80%)";
-export const Yellow30 = "hsl(45, 100%, 75%)";
-export const Yellow40 = "hsl(45, 100%, 65%)";
-export const Yellow50 = "hsl(40, 100%, 55%)";
+export const Yellow10 = "hsl(45, 100%, 98%)";
+export const Yellow20 = "hsl(45, 100%, 90%)";
+export const Yellow30 = "hsl(45, 100%, 85%)";
+export const Yellow40 = "hsl(45, 100%, 75%)";
+export const Yellow50 = "hsl(40, 100%, 50%)";
 export const Yellow60 = "hsl(30, 100%, 45%)";
-export const Yellow70 = "hsl(20, 100%, 37.5%)";
-export const Yellow80 = "hsl(17.5, 95%, 35%)";
-export const Yellow90 = "hsl(10, 95%, 25%)";
+export const Yellow70 = "hsl(25, 100%, 35%)";
+export const Yellow80 = "hsl(15, 100%, 30%)";
+export const Yellow90 = "hsl(15, 100%, 25%)";
 export const Red10 = "hsl(345, 100%, 98%)";
 export const Red20 = "hsl(345, 100%, 92.5%)";
 export const Red30 = "hsl(345, 100%, 90%)";
@@ -66,10 +66,10 @@ export const Red60 = "hsl(345, 100%, 30%)";
 export const Red70 = "hsl(345, 100%, 25%)";
 export const Red80 = "hsl(342.5, 100%, 20%)";
 export const Red90 = "hsl(340, 100%, 15%)";
-export const Neutral10 = "hsl(220, 15%, 97.5%)";
-export const Neutral20 = "hsl(220, 15%, 90%)";
-export const Neutral30 = "hsl(220, 15%, 85%)";
-export const Neutral40 = "hsl(220, 15%, 75%)";
+export const Neutral10 = "hsl(220, 20%, 97.5%)";
+export const Neutral20 = "hsl(220, 20%, 90%)";
+export const Neutral30 = "hsl(220, 20%, 85%)";
+export const Neutral40 = "hsl(220, 20%, 75%)";
 export const Neutral50 = "hsl(220, 20%, 35%)";
 export const Neutral60 = "hsl(220, 20%, 30%)";
 export const Neutral70 = "hsl(220, 20%, 25%)";
