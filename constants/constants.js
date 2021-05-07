@@ -21,11 +21,6 @@ export const SHADES = {
     default: palettes.blue['50'].value,
     dark: palettes.blue['80'].value,
   },
-  cyan: {
-    light: palettes.cyan['20'].value,
-    default: palettes.cyan['50'].value,
-    dark: palettes.cyan['80'].value,
-  },
   green: {
     light: palettes.green['20'].value,
     default: palettes.green['50'].value,
