@@ -13,6 +13,9 @@ export default {
     id() {
       return slugify(this.title);
     },
+    href() {
+      return `#${this.id}`;
+    },
   },
 }
 </script>
@@ -25,6 +28,13 @@ export default {
       v-bind:id="id"
     >
       {{ title }}
+      <a
+        aria-hidden="true"
+        class="anchor-link"
+        v-bind:href="href"
+      >
+        #
+      </a>
     </h2>
     <slot></slot>
   </section>
