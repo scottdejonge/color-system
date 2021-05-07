@@ -1,6 +1,6 @@
 <script>
 import palettes from '../constants/palettes.json'
-import { SHADES } from '../constants/constants'
+import { BASE, SHADES } from '../constants/constants'
 import Combinations from './components/Combinations.vue'
 import Palette from './components/Palette.vue'
 import Section from './components/Section.vue'
@@ -9,6 +9,7 @@ import Swatches from './components/Swatches.vue'
 export default {
   name: 'App',
   palettes,
+  BASE,
   SHADES,
   components: {
     Combinations,
@@ -23,12 +24,17 @@ export default {
         return acc;
       },{});
     },
+    style() {
+      return `color:${BASE.dark}`
+    },
   },
 }
 </script>
 
 <template>
-  <main>
+  <main
+    v-bind:style="style"
+  >
     <h1>Color System</h1>
     <Section
       title="Base Colors"
