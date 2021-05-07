@@ -31,24 +31,45 @@ h1 {
   margin-bottom: 0.5em;
   margin-top: 0;
   font-size: 1.5rem;
+  font-weight: 800;
 }
 
 h2 {
   margin-bottom: 1em;
   margin-top: 1.5em;
   font-size: 1.25rem;
+  font-weight: 600;
 }
 
 h3 {
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 h4 {
   margin-bottom: 1em;
   margin-top: 1em;
   font-size: 0.875rem;
+  font-weight: 600;
+}
+
+h1:first-child, 
+h2:first-child, 
+h4:first-child, 
+h5:first-child, 
+h6:first-child  {
+  margin-top: 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.swatch code {
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  font-size: 0.625rem;
 }
 
 table {
@@ -67,7 +88,10 @@ th {
 
 section {
   margin-bottom: 4rem;
-  margin-top: 4rem;
+}
+
+section:last-child {
+  margin-bottom: 0;
 }
 
 /**
@@ -146,12 +170,28 @@ section {
 }
 
 .swatch {
-  font-weight: 500;
-  padding: 1em 0.5em;
+  padding: 1.25rem 1rem;
 }
 
-.swatch code {
+.swatch h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.swatch p {
   font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.swatch p:first-child {
+  margin-top: 0;
+}
+
+.swatch p:last-child {
+  margin-bottom: 0;
 }
 
 /**
