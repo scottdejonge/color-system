@@ -67,9 +67,15 @@ strong {
   font-weight: 700;
 }
 
-.swatch code {
-  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-  font-size: 0.625rem;
+a.anchor-link {
+  opacity: 0;
+  color: currentColor;
+  text-decoration: none;
+}
+
+a.anchor-link:focus,
+a.anchor-link:hover {
+  opacity: 1;
 }
 
 table {
@@ -192,6 +198,11 @@ section:last-child {
 
 .swatch p:last-child {
   margin-bottom: 0;
+}
+
+.swatch code {
+  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  font-size: 0.625rem;
 }
 
 /**
