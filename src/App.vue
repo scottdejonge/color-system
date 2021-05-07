@@ -2,7 +2,6 @@
 import palettes from '../constants/palettes.json'
 import { SHADES } from '../constants/constants'
 import Combinations from './components/Combinations.vue'
-import Compliments from './components/Compliments.vue'
 import Gradients from './components/Gradients.vue'
 import Palette from './components/Palette.vue'
 import Section from './components/Section.vue'
@@ -14,7 +13,6 @@ export default {
   SHADES,
   components: {
     Combinations,
-    Compliments,
     Gradients,
     Palette,
     Section,
@@ -56,13 +54,6 @@ export default {
         v-bind:key="name"
         v-bind:name="name"
         v-bind:palette="palette"
-      />
-    </Section>
-    <Section
-      title="Compliments"
-    >
-      <Compliments
-        v-bind:palettes="reducedPalettes"
       />
     </Section>
     <Section
