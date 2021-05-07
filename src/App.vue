@@ -107,18 +107,18 @@ export default {
         </li>
         <li>
           <Swatch
-            id="red-50"
-            name="Negative"
-            scale="50"
-            v-bind:color="$options.palettes.red['50'].value"
-          />
-        </li>
-        <li>
-          <Swatch
             id="yellow-50"
             name="Caution"
             scale="50"
             v-bind:color="$options.palettes.yellow['50'].value"
+          />
+        </li>
+        <li>
+          <Swatch
+            id="red-50"
+            name="Negative"
+            scale="50"
+            v-bind:color="$options.palettes.red['50'].value"
           />
         </li>
         <li>
