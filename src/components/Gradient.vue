@@ -1,6 +1,4 @@
 <script>
-import { slugify } from '../utils/slugify'
-
 export default {
   name: 'Gradient',
   props: {
@@ -14,45 +12,22 @@ export default {
     },
     size: {
       type: Number,
-      default: 64,
+      default: 48,
     },
   },
   computed: {
-    id() {
-      return `${slugify(this.first)}-${slugify(this.second)}`;
+    style() {
+      return [
+        `background: linear-gradient(to left, ${this.first}, ${this.second})`,
+        `height: ${this.size}px`,
+      ].join('; ');
     },
   },
 }
 </script>
 
 <template>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    class="gradient"
-    width="100%"
-    v-bind:height="size"
-    v-bind:viewBox="`0 0 100% ${size}`"
-  >
-    <defs>
-      <linearGradient
-        v-bind:id="id"
-      >
-        <stop
-          offset="0%"
-          v-bind:stop-color="first"
-        />
-        <stop
-          offset="100%"
-          v-bind:stop-color="second"
-        />
-      </linearGradient>
-    </defs>
-    <rect
-      x="0"
-      y="0"
-      width="100%"
-      v-bind:fill="`url(#${id})`"
-      v-bind:height="size"
-    />
-  </svg>
+  <div
+    v-bind:style="style"
+  />
 </template>
