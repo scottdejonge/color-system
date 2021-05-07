@@ -170,12 +170,28 @@ section:last-child {
 }
 
 .swatch {
-  font-weight: 500;
-  padding: 1em 0.5em;
+  padding: 1.25rem 1rem;
 }
 
-.swatch code {
+.swatch h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.swatch p {
   font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.swatch p:first-child {
+  margin-top: 0;
+}
+
+.swatch p:last-child {
+  margin-bottom: 0;
 }
 
 /**

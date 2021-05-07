@@ -8,9 +8,17 @@ export default {
       type: String,
       required: true,
     },
-    paletteName: {
+    id: {
+      default: '',
       type: String,
-      required: true,
+    },
+    name: {
+      default: '',
+      type: String,
+    },
+    paletteName: {
+      default: '',
+      type: String,
     },
     scale: {
       type: [Number, String],
@@ -18,14 +26,14 @@ export default {
     },
   },
   computed: {
-    textColor() {
-      return Number(this.scale) >= 50 ? BASE.light : BASE.dark;
-    },
-    name() {
-      return `${this.paletteName}-${this.scale}`;
+    label() {
+      return this.id || `${this.paletteName}-${this.scale}`;
     },
     style() {
       return `background-color:${this.color}; color:${this.textColor}`
+    },
+    textColor() {
+      return Number(this.scale) >= 50 ? BASE.light : BASE.dark;
     },
   },
 }
@@ -36,8 +44,8 @@ export default {
     class="swatch"
     v-bind:style="style"
   >
-    <code>
-      {{ name }}
-    </code>
+    <h4 v-if="name">{{ name }}</h4>
+    <p>{{ label }}</p>
+    <p><code>{{ color }}</code></p>
   </div>
 </template>
