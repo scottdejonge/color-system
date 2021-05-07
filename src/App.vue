@@ -46,9 +46,17 @@ export default {
         <li>
           <Swatch
             id="neutral-90"
-            name="Base"
+            name="Dark"
             scale="90"
             v-bind:color="$options.palettes.neutral['90'].value"
+          />
+        </li>
+        <li>
+          <Swatch
+            id="neutral-50"
+            name="Middle"
+            scale="50"
+            v-bind:color="$options.palettes.neutral['50'].value"
           />
         </li>
       </ul>
