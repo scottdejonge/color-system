@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 16 Jun 2021 02:15:25 GMT
+ * Generated on Wed, 16 Jun 2021 05:31:16 GMT
  */
 
 export const Magenta10 = "hsl(300, 60%, 95%)";
@@ -21,19 +21,19 @@ export const Purple60 = "hsl(265, 85%, 37.5%)";
 export const Purple70 = "hsl(265, 80%, 30%)";
 export const Purple80 = "hsl(265, 80%, 20%)";
 export const Purple90 = "hsl(265, 80%, 15%)";
-export const Blue10 = "hsl(210, 80%, 95%)";
-export const Blue20 = "hsl(210, 80%, 90%)";
-export const Blue30 = "hsl(210, 80%, 75%)";
-export const Blue40 = "hsl(224, 100%, 60%)";
+export const Blue10 = "hsl(220, 100%, 95%)";
+export const Blue20 = "hsl(220, 100%, 90%)";
+export const Blue30 = "hsl(220, 100%, 75%)";
+export const Blue40 = "hsl(220, 100%, 70%)";
 export const Blue50 = "hsl(245, 90%, 50%)";
-export const Blue60 = "hsl(240, 80%, 40%)";
-export const Blue70 = "hsl(240, 80%, 30%)";
-export const Blue80 = "hsl(240, 66%, 25%)";
-export const Blue90 = "hsl(240, 90%, 15%)";
+export const Blue60 = "hsl(245, 80%, 40%)";
+export const Blue70 = "hsl(245, 80%, 30%)";
+export const Blue80 = "hsl(245, 66%, 25%)";
+export const Blue90 = "hsl(245, 90%, 15%)";
 export const Green10 = "hsl(160, 95%, 95%)";
 export const Green20 = "hsl(160, 95%, 90%)";
 export const Green30 = "hsl(160, 95%, 80%)";
-export const Green40 = "hsl(160, 50%, 60%)";
+export const Green40 = "hsl(160, 95%, 70%)";
 export const Green50 = "hsl(160, 100%, 20%)";
 export const Green60 = "hsl(160, 90%, 17.5%)";
 export const Green70 = "hsl(160, 80%, 15%)";
@@ -51,7 +51,7 @@ export const Yellow90 = "hsl(15, 100%, 25%)";
 export const Red10 = "hsl(345, 100%, 95%)";
 export const Red20 = "hsl(345, 100%, 90%)";
 export const Red30 = "hsl(345, 100%, 80%)";
-export const Red40 = "hsl(345, 80%, 60%)";
+export const Red40 = "hsl(345, 100%, 70%)";
 export const Red50 = "hsl(345, 100%, 35%)";
 export const Red60 = "hsl(345, 100%, 30%)";
 export const Red70 = "hsl(345, 100%, 25%)";
@@ -68,8 +68,8 @@ export const Brown80 = "hsl(20, 35%, 20%)";
 export const Brown90 = "hsl(20, 35%, 15%)";
 export const Neutral10 = "hsl(220, 20%, 95%)";
 export const Neutral20 = "hsl(220, 20%, 90%)";
-export const Neutral30 = "hsl(220, 20%, 75%)";
-export const Neutral40 = "hsl(220, 20%, 65%)";
+export const Neutral30 = "hsl(220, 20%, 85%)";
+export const Neutral40 = "hsl(220, 20%, 75%)";
 export const Neutral50 = "hsl(220, 20%, 35%)";
 export const Neutral60 = "hsl(220, 25%, 30%)";
 export const Neutral70 = "hsl(220, 30%, 25%)";

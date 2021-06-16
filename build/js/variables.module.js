@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 16 Jun 2021 02:15:25 GMT
+ * Generated on Wed, 16 Jun 2021 05:31:16 GMT
  */
 
 module.exports = {
@@ -280,9 +280,9 @@ module.exports = {
   },
   "blue": {
     "10": {
-      "value": "hsl(210, 80%, 95%)",
+      "value": "hsl(220, 100%, 95%)",
       "original": {
-        "value": "hsl(210, 80%, 95%)"
+        "value": "hsl(220, 100%, 95%)"
       },
       "name": "Blue10",
       "attributes": {
@@ -295,9 +295,9 @@ module.exports = {
       ]
     },
     "20": {
-      "value": "hsl(210, 80%, 90%)",
+      "value": "hsl(220, 100%, 90%)",
       "original": {
-        "value": "hsl(210, 80%, 90%)"
+        "value": "hsl(220, 100%, 90%)"
       },
       "name": "Blue20",
       "attributes": {
@@ -310,9 +310,9 @@ module.exports = {
       ]
     },
     "30": {
-      "value": "hsl(210, 80%, 75%)",
+      "value": "hsl(220, 100%, 75%)",
       "original": {
-        "value": "hsl(210, 80%, 75%)"
+        "value": "hsl(220, 100%, 75%)"
       },
       "name": "Blue30",
       "attributes": {
@@ -325,9 +325,9 @@ module.exports = {
       ]
     },
     "40": {
-      "value": "hsl(224, 100%, 60%)",
+      "value": "hsl(220, 100%, 70%)",
       "original": {
-        "value": "hsl(224, 100%, 60%)"
+        "value": "hsl(220, 100%, 70%)"
       },
       "name": "Blue40",
       "attributes": {
@@ -355,9 +355,9 @@ module.exports = {
       ]
     },
     "60": {
-      "value": "hsl(240, 80%, 40%)",
+      "value": "hsl(245, 80%, 40%)",
       "original": {
-        "value": "hsl(240, 80%, 40%)"
+        "value": "hsl(245, 80%, 40%)"
       },
       "name": "Blue60",
       "attributes": {
@@ -370,9 +370,9 @@ module.exports = {
       ]
     },
     "70": {
-      "value": "hsl(240, 80%, 30%)",
+      "value": "hsl(245, 80%, 30%)",
       "original": {
-        "value": "hsl(240, 80%, 30%)"
+        "value": "hsl(245, 80%, 30%)"
       },
       "name": "Blue70",
       "attributes": {
@@ -385,9 +385,9 @@ module.exports = {
       ]
     },
     "80": {
-      "value": "hsl(240, 66%, 25%)",
+      "value": "hsl(245, 66%, 25%)",
       "original": {
-        "value": "hsl(240, 66%, 25%)"
+        "value": "hsl(245, 66%, 25%)"
       },
       "name": "Blue80",
       "attributes": {
@@ -400,9 +400,9 @@ module.exports = {
       ]
     },
     "90": {
-      "value": "hsl(240, 90%, 15%)",
+      "value": "hsl(245, 90%, 15%)",
       "original": {
-        "value": "hsl(240, 90%, 15%)"
+        "value": "hsl(245, 90%, 15%)"
       },
       "name": "Blue90",
       "attributes": {
@@ -462,9 +462,9 @@ module.exports = {
       ]
     },
     "40": {
-      "value": "hsl(160, 50%, 60%)",
+      "value": "hsl(160, 95%, 70%)",
       "original": {
-        "value": "hsl(160, 50%, 60%)"
+        "value": "hsl(160, 95%, 70%)"
       },
       "name": "Green40",
       "attributes": {
@@ -736,9 +736,9 @@ module.exports = {
       ]
     },
     "40": {
-      "value": "hsl(345, 80%, 60%)",
+      "value": "hsl(345, 100%, 70%)",
       "original": {
-        "value": "hsl(345, 80%, 60%)"
+        "value": "hsl(345, 100%, 70%)"
       },
       "name": "Red40",
       "attributes": {
@@ -995,9 +995,9 @@ module.exports = {
       ]
     },
     "30": {
-      "value": "hsl(220, 20%, 75%)",
+      "value": "hsl(220, 20%, 85%)",
       "original": {
-        "value": "hsl(220, 20%, 75%)"
+        "value": "hsl(220, 20%, 85%)"
       },
       "name": "Neutral30",
       "attributes": {
@@ -1010,9 +1010,9 @@ module.exports = {
       ]
     },
     "40": {
-      "value": "hsl(220, 20%, 65%)",
+      "value": "hsl(220, 20%, 75%)",
       "original": {
-        "value": "hsl(220, 20%, 65%)"
+        "value": "hsl(220, 20%, 75%)"
       },
       "name": "Neutral40",
       "attributes": {
