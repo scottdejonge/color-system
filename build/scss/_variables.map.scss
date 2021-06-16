@@ -1,7 +1,7 @@
 
 /*
   Do not edit directly
-  Generated on Wed, 12 May 2021 00:37:28 GMT
+  Generated on Wed, 16 Jun 2021 02:15:25 GMT
 */
 
 $magenta-10: hsl(300, 60%, 95%) !default;
@@ -26,24 +26,24 @@ $blue-10: hsl(210, 80%, 95%) !default;
 $blue-20: hsl(210, 80%, 90%) !default;
 $blue-30: hsl(210, 80%, 75%) !default;
 $blue-40: hsl(224, 100%, 60%) !default;
-$blue-50: hsl(245, 80%, 50%) !default;
+$blue-50: hsl(245, 90%, 50%) !default;
 $blue-60: hsl(240, 80%, 40%) !default;
 $blue-70: hsl(240, 80%, 30%) !default;
 $blue-80: hsl(240, 66%, 25%) !default;
 $blue-90: hsl(240, 90%, 15%) !default;
-$green-10: hsl(160, 75%, 95%) !default;
-$green-20: hsl(160, 75%, 90%) !default;
-$green-30: hsl(160, 75%, 80%) !default;
+$green-10: hsl(160, 95%, 95%) !default;
+$green-20: hsl(160, 95%, 90%) !default;
+$green-30: hsl(160, 95%, 80%) !default;
 $green-40: hsl(160, 50%, 60%) !default;
 $green-50: hsl(160, 100%, 20%) !default;
 $green-60: hsl(160, 90%, 17.5%) !default;
 $green-70: hsl(160, 80%, 15%) !default;
 $green-80: hsl(160, 80%, 12.5%) !default;
 $green-90: hsl(160, 80%, 10%) !default;
-$yellow-10: hsl(45, 100%, 95%) !default;
-$yellow-20: hsl(45, 100%, 90%) !default;
-$yellow-30: hsl(45, 100%, 85%) !default;
-$yellow-40: hsl(45, 100%, 75%) !default;
+$yellow-10: hsl(42, 100%, 95%) !default;
+$yellow-20: hsl(42, 100%, 90%) !default;
+$yellow-30: hsl(42, 100%, 85%) !default;
+$yellow-40: hsl(42, 100%, 75%) !default;
 $yellow-50: hsl(40, 100%, 50%) !default;
 $yellow-60: hsl(30, 100%, 45%) !default;
 $yellow-70: hsl(25, 100%, 35%) !default;
@@ -58,10 +58,19 @@ $red-60: hsl(345, 100%, 30%) !default;
 $red-70: hsl(345, 100%, 25%) !default;
 $red-80: hsl(345, 100%, 20%) !default;
 $red-90: hsl(340, 100%, 15%) !default;
+$brown-10: hsl(30, 55%, 95%) !default;
+$brown-20: hsl(30, 45%, 90%) !default;
+$brown-30: hsl(30, 35%, 80%) !default;
+$brown-40: hsl(30, 35%, 70%) !default;
+$brown-50: hsl(20, 35%, 35%) !default;
+$brown-60: hsl(20, 35%, 30%) !default;
+$brown-70: hsl(20, 35%, 25%) !default;
+$brown-80: hsl(20, 35%, 20%) !default;
+$brown-90: hsl(20, 35%, 15%) !default;
 $neutral-10: hsl(220, 20%, 95%) !default;
 $neutral-20: hsl(220, 20%, 90%) !default;
 $neutral-30: hsl(220, 20%, 75%) !default;
-$neutral-40: hsl(220, 20%, 66%) !default;
+$neutral-40: hsl(220, 20%, 65%) !default;
 $neutral-50: hsl(220, 20%, 35%) !default;
 $neutral-60: hsl(220, 25%, 30%) !default;
 $neutral-70: hsl(220, 30%, 25%) !default;
@@ -134,6 +143,17 @@ $colors: (
     '70': $red-70,
     '80': $red-80,
     '90': $red-90
+  ),
+  'brown': (
+    '10': $brown-10,
+    '20': $brown-20,
+    '30': $brown-30,
+    '40': $brown-40,
+    '50': $brown-50,
+    '60': $brown-60,
+    '70': $brown-70,
+    '80': $brown-80,
+    '90': $brown-90
   ),
   'neutral': (
     '10': $neutral-10,

@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 12 May 2021 00:37:28 GMT
+ * Generated on Wed, 16 Jun 2021 02:15:25 GMT
  */
 
 module.exports = {
@@ -340,9 +340,9 @@ module.exports = {
       ]
     },
     "50": {
-      "value": "hsl(245, 80%, 50%)",
+      "value": "hsl(245, 90%, 50%)",
       "original": {
-        "value": "hsl(245, 80%, 50%)"
+        "value": "hsl(245, 90%, 50%)"
       },
       "name": "Blue50",
       "attributes": {
@@ -417,9 +417,9 @@ module.exports = {
   },
   "green": {
     "10": {
-      "value": "hsl(160, 75%, 95%)",
+      "value": "hsl(160, 95%, 95%)",
       "original": {
-        "value": "hsl(160, 75%, 95%)"
+        "value": "hsl(160, 95%, 95%)"
       },
       "name": "Green10",
       "attributes": {
@@ -432,9 +432,9 @@ module.exports = {
       ]
     },
     "20": {
-      "value": "hsl(160, 75%, 90%)",
+      "value": "hsl(160, 95%, 90%)",
       "original": {
-        "value": "hsl(160, 75%, 90%)"
+        "value": "hsl(160, 95%, 90%)"
       },
       "name": "Green20",
       "attributes": {
@@ -447,9 +447,9 @@ module.exports = {
       ]
     },
     "30": {
-      "value": "hsl(160, 75%, 80%)",
+      "value": "hsl(160, 95%, 80%)",
       "original": {
-        "value": "hsl(160, 75%, 80%)"
+        "value": "hsl(160, 95%, 80%)"
       },
       "name": "Green30",
       "attributes": {
@@ -554,9 +554,9 @@ module.exports = {
   },
   "yellow": {
     "10": {
-      "value": "hsl(45, 100%, 95%)",
+      "value": "hsl(42, 100%, 95%)",
       "original": {
-        "value": "hsl(45, 100%, 95%)"
+        "value": "hsl(42, 100%, 95%)"
       },
       "name": "Yellow10",
       "attributes": {
@@ -569,9 +569,9 @@ module.exports = {
       ]
     },
     "20": {
-      "value": "hsl(45, 100%, 90%)",
+      "value": "hsl(42, 100%, 90%)",
       "original": {
-        "value": "hsl(45, 100%, 90%)"
+        "value": "hsl(42, 100%, 90%)"
       },
       "name": "Yellow20",
       "attributes": {
@@ -584,9 +584,9 @@ module.exports = {
       ]
     },
     "30": {
-      "value": "hsl(45, 100%, 85%)",
+      "value": "hsl(42, 100%, 85%)",
       "original": {
-        "value": "hsl(45, 100%, 85%)"
+        "value": "hsl(42, 100%, 85%)"
       },
       "name": "Yellow30",
       "attributes": {
@@ -599,9 +599,9 @@ module.exports = {
       ]
     },
     "40": {
-      "value": "hsl(45, 100%, 75%)",
+      "value": "hsl(42, 100%, 75%)",
       "original": {
-        "value": "hsl(45, 100%, 75%)"
+        "value": "hsl(42, 100%, 75%)"
       },
       "name": "Yellow40",
       "attributes": {
@@ -826,6 +826,143 @@ module.exports = {
       ]
     }
   },
+  "brown": {
+    "10": {
+      "value": "hsl(30, 55%, 95%)",
+      "original": {
+        "value": "hsl(30, 55%, 95%)"
+      },
+      "name": "Brown10",
+      "attributes": {
+        "category": "brown",
+        "type": "10"
+      },
+      "path": [
+        "brown",
+        "10"
+      ]
+    },
+    "20": {
+      "value": "hsl(30, 45%, 90%)",
+      "original": {
+        "value": "hsl(30, 45%, 90%)"
+      },
+      "name": "Brown20",
+      "attributes": {
+        "category": "brown",
+        "type": "20"
+      },
+      "path": [
+        "brown",
+        "20"
+      ]
+    },
+    "30": {
+      "value": "hsl(30, 35%, 80%)",
+      "original": {
+        "value": "hsl(30, 35%, 80%)"
+      },
+      "name": "Brown30",
+      "attributes": {
+        "category": "brown",
+        "type": "30"
+      },
+      "path": [
+        "brown",
+        "30"
+      ]
+    },
+    "40": {
+      "value": "hsl(30, 35%, 70%)",
+      "original": {
+        "value": "hsl(30, 35%, 70%)"
+      },
+      "name": "Brown40",
+      "attributes": {
+        "category": "brown",
+        "type": "40"
+      },
+      "path": [
+        "brown",
+        "40"
+      ]
+    },
+    "50": {
+      "value": "hsl(20, 35%, 35%)",
+      "original": {
+        "value": "hsl(20, 35%, 35%)"
+      },
+      "name": "Brown50",
+      "attributes": {
+        "category": "brown",
+        "type": "50"
+      },
+      "path": [
+        "brown",
+        "50"
+      ]
+    },
+    "60": {
+      "value": "hsl(20, 35%, 30%)",
+      "original": {
+        "value": "hsl(20, 35%, 30%)"
+      },
+      "name": "Brown60",
+      "attributes": {
+        "category": "brown",
+        "type": "60"
+      },
+      "path": [
+        "brown",
+        "60"
+      ]
+    },
+    "70": {
+      "value": "hsl(20, 35%, 25%)",
+      "original": {
+        "value": "hsl(20, 35%, 25%)"
+      },
+      "name": "Brown70",
+      "attributes": {
+        "category": "brown",
+        "type": "70"
+      },
+      "path": [
+        "brown",
+        "70"
+      ]
+    },
+    "80": {
+      "value": "hsl(20, 35%, 20%)",
+      "original": {
+        "value": "hsl(20, 35%, 20%)"
+      },
+      "name": "Brown80",
+      "attributes": {
+        "category": "brown",
+        "type": "80"
+      },
+      "path": [
+        "brown",
+        "80"
+      ]
+    },
+    "90": {
+      "value": "hsl(20, 35%, 15%)",
+      "original": {
+        "value": "hsl(20, 35%, 15%)"
+      },
+      "name": "Brown90",
+      "attributes": {
+        "category": "brown",
+        "type": "90"
+      },
+      "path": [
+        "brown",
+        "90"
+      ]
+    }
+  },
   "neutral": {
     "10": {
       "value": "hsl(220, 20%, 95%)",
@@ -873,9 +1010,9 @@ module.exports = {
       ]
     },
     "40": {
-      "value": "hsl(220, 20%, 66%)",
+      "value": "hsl(220, 20%, 65%)",
       "original": {
-        "value": "hsl(220, 20%, 66%)"
+        "value": "hsl(220, 20%, 65%)"
       },
       "name": "Neutral40",
       "attributes": {
