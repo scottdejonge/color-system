@@ -45,6 +45,14 @@ export default {
       <ul class="swatches">
         <li>
           <Swatch
+            id="blue-50"
+            name="Cobolt"
+            scale="50"
+            v-bind:color="$options.palettes.blue['50'].value"
+          />
+        </li>
+        <li>
+          <Swatch
             id="neutral-90"
             name="Dark"
             scale="90"
@@ -60,30 +68,30 @@ export default {
           />
         </li>
       </ul>
-      <h3>Selects</h3>
+      <h3>Pastels</h3>
       <ul class="swatches">
         <li>
           <Swatch
-            id="blue-50"
-            name="Cobolt"
-            scale="50"
-            v-bind:color="$options.palettes.blue['50'].value"
-          />
-        </li>
-        <li>
-          <Swatch
-            id="blue-80"
-            name="Navy"
-            scale="80"
-            v-bind:color="$options.palettes.blue['80'].value"
-          />
-        </li>
-        <li>
-          <Swatch
-            id="green-30"
+            id="green-20"
             name="Mint"
-            scale="30"
-            v-bind:color="$options.palettes.green['30'].value"
+            scale="20"
+            v-bind:color="$options.palettes.green['20'].value"
+          />
+        </li>
+        <li>
+          <Swatch
+            id="yellow-20"
+            name="Barley"
+            scale="20"
+            v-bind:color="$options.palettes.yellow['20'].value"
+          />
+        </li>
+        <li>
+          <Swatch
+            id="brown-10"
+            name="Sand"
+            scale="10"
+            v-bind:color="$options.palettes.brown['10'].value"
           />
         </li>
         <li>

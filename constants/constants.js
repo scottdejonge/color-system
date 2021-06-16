@@ -36,6 +36,11 @@ export const SHADES = {
     default: palettes.red['50'].value,
     dark: palettes.red['80'].value,
   },
+  brown: {
+    light: palettes.brown['20'].value,
+    default: palettes.brown['50'].value,
+    dark: palettes.brown['80'].value,
+  },
   neutral: {
     light: palettes.neutral['20'].value,
     default: palettes.neutral['50'].value,
