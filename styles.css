@@ -184,7 +184,7 @@ section:last-child {
 
 .swatch {
   border-radius: 0.25rem;
-  padding: 1.25rem 1rem;
+  padding: 1rem 0.75rem;
 }
 
 .swatch h4 {
