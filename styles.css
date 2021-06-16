@@ -167,6 +167,7 @@ section:last-child {
 
 .swatches {
   display: flex;
+  gap: 0.5rem;
 }
 
 .swatches > li {
@@ -175,7 +176,14 @@ section:last-child {
   flex-shrink: 1;
 }
 
+.swatches > li > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .swatch {
+  border-radius: 0.25rem;
   padding: 1.25rem 1rem;
 }
 
