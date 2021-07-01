@@ -6,15 +6,10 @@ export const BASE = {
 };
 
 export const SHADES = {
-  magenta: {
-    light: palettes.magenta['20'].value,
-    default: palettes.magenta['50'].value,
-    dark: palettes.magenta['80'].value,
-  },
-  purple: {
-    light: palettes.purple['20'].value,
-    default: palettes.purple['50'].value,
-    dark: palettes.purple['80'].value,
+  neutral: {
+    light: palettes.neutral['20'].value,
+    default: palettes.neutral['50'].value,
+    dark: palettes.neutral['80'].value,
   },
   blue: {
     light: palettes.blue['20'].value,
@@ -35,16 +30,6 @@ export const SHADES = {
     light: palettes.red['20'].value,
     default: palettes.red['50'].value,
     dark: palettes.red['80'].value,
-  },
-  brown: {
-    light: palettes.brown['20'].value,
-    default: palettes.brown['50'].value,
-    dark: palettes.brown['80'].value,
-  },
-  neutral: {
-    light: palettes.neutral['20'].value,
-    default: palettes.neutral['50'].value,
-    dark: palettes.neutral['80'].value,
   },
 };
 
